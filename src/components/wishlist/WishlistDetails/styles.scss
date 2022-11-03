@@ -1,0 +1,98 @@
+.wishlist-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    padding-top: 10px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    > button + button {
+      margin-left: 12px;
+    }
+
+    @media (min-width: 640px) {
+      > button + button {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    span {
+      display: none;
+      color: #ffa67d;
+      font-family: var(--sans-serif);
+      text-transform: uppercase;
+
+      @media (min-width: 640px) {
+        display: inline-block;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+    }
+  }
+
+  &__no-products {
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 53px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: var(--serif);
+    line-height: 2rem;
+    text-align: center;
+
+    @media (min-width: 640px) {
+      max-width: none;
+    }
+  }
+}
+
+.changed-list-name__container, .deleted-list__container {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #06b04d;
+  border-radius: 8px;
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    svg {
+      width: 10px;
+
+      path {
+        stroke: #000;
+      }
+    }
+  }
+}
+
+.changed-list-name__text, .deleted-list__text {
+  color: #06b04d;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+}

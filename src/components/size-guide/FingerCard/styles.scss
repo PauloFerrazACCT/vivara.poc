@@ -1,0 +1,67 @@
+.finger-card__container {
+  width: 100%;
+  max-width: 250px;
+  height: 393px;
+  padding: 1rem 0.75rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.finger-card__img-container-left {
+  position: relative;
+}
+
+.finger-card__img-container-right {
+  position: relative;
+}
+
+.finger-card__img-container-left svg {
+  width: 100%;
+  max-height: 165px;
+  object-fit: cover;
+}
+
+.finger-card__img-container-right svg {
+  width: 100%;
+  max-height: 165px;
+  object-fit: cover;
+  transform: scaleX(-1);
+  transform: scaleX(-1);
+  transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.finger-card__delete-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.finger-card__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: var(--serif);
+  line-height: 1.9rem;
+  text-align: center;
+  border-color: #f0f0f0;
+  border-bottom-width: 1px;
+}
+
+.finger-card__phalange-list {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sans-serif);
+}

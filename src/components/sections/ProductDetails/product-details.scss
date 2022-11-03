@@ -1,0 +1,247 @@
+@import "src/styles/scaffold";
+
+.product-details {
+  grid-row: 1;
+
+  @include media(">=notebook") {
+    grid-area: productImage;
+  }
+}
+
+.product-details__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-4);
+  margin-top: var(--space-3);
+
+  @include media(">=tablet") {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(0, max-content));
+    column-gap: var(--space-4);
+    row-gap: 0;
+  }
+}
+
+.product-details__right-section {
+  z-index: 1;
+  grid-row: 2;
+  width: 100%;
+  overflow: visible;
+
+  @media screen and (width: "1280px") {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  @media screen and (min-height: "480px") {
+    max-height: 170vh;
+  }
+
+  @media screen and (min-height: "600px") {
+    max-height: 135vh;
+  }
+
+  @media screen and (min-height: "768px") {
+    max-height: 104vh;
+  }
+
+  @media screen and (min-height: "900px") {
+    max-height: 90vh;
+  }
+
+  @include media(">=notebook") {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 8rem;
+    grid-area: producPrice;
+    max-width: 340px;
+    padding-right: 20px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--color-neutral-2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-neutral-4);
+    }
+  }
+}
+
+.product-details__image {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+
+  @media screen and (min-width: 910px) {
+    max-width: 864px;
+  }
+
+  [data-gatsby-image-wrapper] {
+    @include media(">=tablet") {
+      border-radius: var(--border-radius-default);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @include media(">=tablet") {
+    grid-row: 1 / span 2;
+    grid-column: span 7;
+    margin-bottom: var(--space-7);
+  }
+
+  @include media(">=notebook") {
+    grid-column: span 8;
+  }
+}
+
+.product-details__content {
+  margin-top: var(--space-3);
+
+  .product-details__description .title-subsection {
+    margin-bottom: var(--space-3);
+  }
+
+  @include media(">=tablet") {
+    grid-column: span 7;
+    margin-top: 0;
+  }
+
+  @include media(">=notebook") {
+    grid-column: span 8;
+  }
+}
+
+.product-details__title {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: var(--serif);
+}
+
+.product-details__settings {
+  height: fit-content;
+  padding-right: 3px;
+  padding-left: 3px;
+
+  .product-details__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-details__sku--disable + button {
+    margin: 0 0 12px;
+  }
+
+  .product-details__content-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: #737373;
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+
+  [data-store-quantity-selector] {
+    width: 144px;
+  }
+
+  [data-store-sku-selector] {
+    margin-bottom: var(--space-4);
+
+    &:last-of-type {
+      margin-bottom: var(--space-7);
+    }
+  }
+
+  .product-details__buttons {
+    display: flex;
+    gap: 23px;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+
+    [data-store-button] {
+      background-color: #000000;
+      border-radius: 0;
+    }
+
+    [data-store-buy-button] {
+      width: 85%;
+    }
+  }
+}
+
+.product-details__values {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.product-details__prices {
+  .price[data-store-price] {
+    display: block;
+
+    &[data-variant="spot"] {
+      margin: 0;
+      font-weight: var(--text-weight-black);
+      font-size: var(--text-size-3);
+    }
+  }
+}
+
+.deleted-wishlist-product__container, .moved-wishlist-product__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 60px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid #06b04d;
+  border-radius: 8px;
+
+  button {
+    position: relative;
+    bottom: 15px;
+    left: 50px;
+
+    svg {
+      width: 10px;
+
+      path {
+        stroke: #000;
+      }
+    }
+  }
+}
+
+.deleted-wishlist-product__text, .moved-wishlist-product__text {
+  color: #06b04d;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+}
+
+.inventory-check-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 15px 0 38px;
+  color: #737373;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+}

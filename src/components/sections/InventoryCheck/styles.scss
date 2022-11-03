@@ -1,0 +1,207 @@
+[data-modal-overlay] {
+  z-index: 10;
+  display: flex;
+  align-self: center;
+}
+
+.inventory-modal {
+  position: relative;
+  width: 94%;
+  max-width: 400px;
+  height: auto;
+  margin: 40px auto auto;
+  padding: 70px 24px 24px;
+  background: #fff;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: fit-content;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  [data-store-button] {
+    &:focus {
+      box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+    }
+  }
+
+  .close-inventory-button, [data-store-icon-button] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    &:active, &:hover, &:focus-visible, &:focus, &:focus-within, &:target {
+      background-color: transparent !important; /* stylelint-disable-line declaration-no-important */
+      border: none !important; /* stylelint-disable-line declaration-no-important */
+      box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+    }
+
+    [data-close-icon] {
+      width: 14px;
+      height: 14px;
+    }
+
+    path {
+      stroke: #737373;
+    }
+  }
+}
+
+.inventory-form {
+  display: flex;
+  flex-direction: column;
+
+  .inventory-title {
+    padding: 0 0 34px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Cormorant Garamont", serif;
+    line-height: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  .inventory-cep-span {
+    padding-bottom: 4px;
+    color: #3e3e3e;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 18px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .inventory-cep-input {
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #585858;
+    border-radius: 0;
+    outline: none;
+
+    &::placeholder {
+      color: #d2d2d2;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .inventory-search-button, [data-store-button] {
+    height: 48px;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    background: #ffa687;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: 0.95;
+    }
+  }
+}
+
+.inventory-results-title {
+  margin: 40px 0 24px;
+  color: #000;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+
+.search-result-container {
+  max-height: 180px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #d2d2d2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    background-color: #585858;
+  }
+}
+
+.search-result-item {
+  margin-bottom: 24px;
+}
+
+.search-result-name {
+  margin-bottom: 4px;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+}
+
+.search-result-address {
+  margin-bottom: 10px;
+  color: #585858;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  line-height: 16px;
+}
+
+.search-result-hours {
+  margin-bottom: 2px;
+  color: #000;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  line-height: 14px;
+}
+
+.businessHours-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-results-message {
+  max-width: 357px;
+  color: #272727;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 22px;
+  text-align: center;
+}
+
+.failed-query-message {
+  max-width: 357px;
+  margin: 40px 0 24px;
+  color: #272727;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 22px;
+  text-align: center;
+}

@@ -1,0 +1,114 @@
+.wishlist-product {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 8px;
+  background-color: white;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  .wishlist-product__child + .wishlist-product__child {
+    margin-top: 1rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+
+  &__btn {
+    @media screen and (min-width: 768px) {
+      max-width: 232px;
+      height: 40px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+
+    p {
+      margin-left: 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+      font-family: var(--serif);
+      line-height: 1.5rem;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__icons {
+    display: flex;
+
+    > button + button {
+      margin-left: 8px;
+    }
+
+    @media (min-width: 768px) {
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    height: 116px;
+    padding: 26px 16px;
+  }
+}
+
+.deleted-product__container, .moved-product__container {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #06b04d;
+  border-radius: 8px;
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    svg {
+      width: 10px;
+
+      path {
+        stroke: #000;
+      }
+    }
+  }
+}
+
+.deleted-product__text, .moved-product__text {
+  color: #06b04d;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+}

@@ -1,0 +1,46 @@
+.size-guide-hands-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-bottom: 2.25rem;
+
+  .hands-container + .hands-container {
+    margin-left: 16px;
+  }
+
+  @media (min-width: 640px) {
+    margin-right: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    .hands-container + .hands-container {
+      margin-left: 40px;
+    }
+  }
+}
+
+.size-guide-hand-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-right: 1.5rem;
+  }
+}
+
+.size-guide-hand-info-container h1 {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: var(--serif);
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+}

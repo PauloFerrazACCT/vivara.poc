@@ -1,0 +1,15 @@
+@import "src/styles/scaffold";
+
+.pdp-container {
+  display: grid;
+  grid-template-columns: calc(100vw - 17px);
+
+  @include media(">=notebook") {
+    grid-template-areas:
+      "productImage productImage producPrice"
+      "description description producPrice";
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}

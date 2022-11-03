@@ -1,0 +1,64 @@
+@import "src/styles/scaffold";
+
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  @include media(">=notebook") {
+    max-width: 1366px;
+  }
+
+  &__video {
+    width: 100%;
+    height: 304px;
+    margin-top: 30px;
+
+    @include media(">=notebook") {
+      max-width: 1366px;
+      height: 480px;
+    }
+
+    .video {
+      width: 100%;
+      height: 304px;
+      margin: 0;
+
+      @include media(">=notebook") {
+        height: 480px;
+      }
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text-container {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    text-align: center;
+    background-color: #01356e;
+
+    @include media(">=notebook") {
+      padding: 32px 88px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 17px;
+
+    @include media(">=notebook") {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

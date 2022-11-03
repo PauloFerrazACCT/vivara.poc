@@ -1,0 +1,25 @@
+[data-modal-overlay] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: var(--color-black-transparent-40);
+}
+
+.base-modal {
+  position: fixed;
+  top: 5.25rem;
+  left: 50%;
+  z-index: 2;
+  width: 95%;
+  max-width: 350px;
+  background-color: white;
+  box-shadow: 0 2px 2px #0000001a;
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    top: 5%;
+  }
+}

@@ -1,0 +1,73 @@
+.modal-cookies {
+  position: fixed;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.625rem #aaa;
+
+  .modal-cookies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    padding: 32px 16px 16px;
+    color: #000000;
+
+    @media (min-width: 64rem) {
+      flex-direction: row;
+      height: 80px;
+      padding: 0;
+    }
+
+    .modal-cookies__button {
+      width: 100%;
+      height: 40px;
+      margin-top: 8px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 12px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      line-height: 14px;
+      background: #f09c75;
+      border: none;
+      border-radius: 1.5rem;
+      cursor: pointer;
+
+      @media (min-width: 64rem) {
+        width: 24%;
+      }
+    }
+
+    .modal-cookies__description {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      @media (min-width: 64rem) {
+        width: 68%;
+      }
+    }
+
+    .modal-cookies__text {
+      padding-bottom: 20px;
+      font-size: 14px;
+
+      @media (min-width: 64rem) {
+        padding-bottom: 0;
+        font-size: 16px;
+      }
+
+      .modal-cookies__text--link {
+        color: #f09c75;
+        text-decoration: none;
+      }
+    }
+  }
+}

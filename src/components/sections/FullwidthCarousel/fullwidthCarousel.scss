@@ -1,0 +1,31 @@
+.slider-fullwidthCarousel-container {
+  .slick-track {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 640px) {
+    .fullwidthCarousel-container {
+      .gatsby-image-wrapper {
+        > div {
+          padding-top: 28% !important; /* stylelint-disable-line declaration-no-important */
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fullwidthCarousel-container {
+      .gatsby-image-wrapper {
+        > div {
+          padding-top: 26.75% !important; /* stylelint-disable-line declaration-no-important */
+        }
+      }
+
+      .gatsby-image-wrapper img {
+        transform: translateZ(0);
+        transition: opacity 250ms linear 0s;
+        will-change: opacity;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "block": [
+    {
+      "id": 1,
+      "title": "Noivado",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab1-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab1-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab1-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab1-img2.png",
+      "desc": "A beleza pura dos diamantes, símbolo de amor eterno.",
+      "selection": "/joias/aneis/aneis-solitarios",
+      "gifts": "/joias/aneis/aneis-solitarios"
+    },
+    {
+      "id": 2,
+      "title": "Casamento",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab2-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab2-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab2-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab2-img2.png",
+      "desc": "Para celebrar com amor: o “sim” da sua vida de um jeito especial com solitários e alianças para todos os estilos.",
+      "selection": "/joias/aneis/aneis-solitarios",
+      "gifts": "/joias/aneis/aneis-solitarios"
+    },
+    {
+      "id": 3,
+      "title": "Bodas",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab3-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab3-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab3-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab3-img2.png",
+      "desc": "Amor para reviver na memória: renovar os votos é eternizar a história da vida a dois a cada ciclo.",
+      "selection": "/bodas",
+      "gifts": "/bodas"
+    },
+    {
+      "id": 4,
+      "title": "Formatura",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab4-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab4-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab4-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab4-img2.png",
+      "desc": "Marque com uma joia especial o início de uma grande fase de sonhos e muitas conquistas.",
+      "selection": "/formatura",
+      "gifts": "/formatura"
+    },
+    {
+      "id": 5,
+      "title": "Nascimento",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab5-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab5-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab5-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab5-img2.png",
+      "desc": "Puro afeto: joias delicadas e cheias de amor para celebrar a vida que chega!",
+      "selection": "/joias-infantis",
+      "gifts": "/joias-infantis"
+    },
+    {
+      "id": 6,
+      "title": "Aniversário",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab6-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab6-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab6-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab6-img2.png",
+      "desc": "Porque celebrar cada ciclo que se inicia num novo ano é comemorar o amor que se tem por alguém especial!",
+      "selection": "/personalizacao",
+      "gifts": "/personalizacao"
+    }
+  ]
+}

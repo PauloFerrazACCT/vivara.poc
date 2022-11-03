@@ -1,0 +1,122 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-neutral-lightest);
+  border-radius: var(--border-radius-default);
+
+  [data-card-content] {
+    display: flex;
+    align-items: center;
+  }
+
+  [data-store-button] {
+    align-items: flex-start;
+    padding: 0;
+
+    &:hover {
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  [data-gatsby-image-wrapper] {
+    flex-shrink: 0;
+    margin-bottom: auto;
+    border-radius: var(--border-radius-default);
+  }
+
+  [data-cart-item-summary] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--text-weight-bold);
+    font-family: var(--serif);
+
+    p {
+      margin-bottom: var(--space-0);
+      font-size: var(--text-size-1);
+      line-height: 1.2;
+    }
+  }
+
+  [data-cart-item-prices] {
+    display: flex;
+    justify-content: flex-end;
+
+    [data-store-price] {
+      font-weight: var(--text-weight-regular);
+      font-size: var(--text-size-1);
+    }
+  }
+
+  [data-cart-quantity] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    [data-store-quantity-selector] {
+      width: 5rem;
+      height: 2rem;
+      padding: 0 0.5rem;
+      font-size: var(--text-size-0);
+
+      [data-store-button] {
+        width: 1rem;
+        height: 1rem;
+        outline: none;
+      }
+    }
+
+    [data-store-price] {
+      font-size: var(--text-size-0);
+      text-decoration: none;
+    }
+  }
+
+  .available-items-description {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    color: #737373;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  [data-card-actions] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: var(--space-3);
+    margin-left: var(--space-3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart-item {
+    [data-cart-item-summary] {
+      p {
+        font-size: var(--text-size-0);
+      }
+    }
+
+    [data-cart-item-prices] {
+      align-items: end;
+      font-size: var(--text-size-0);
+
+      [data-store-price] {
+        font-size: var(--text-size-0);
+      }
+    }
+
+    [data-cart-quantity] {
+      [data-store-price] {
+        font-size: 10px;
+      }
+    }
+  }
+}

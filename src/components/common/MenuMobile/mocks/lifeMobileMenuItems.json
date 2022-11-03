@@ -1,0 +1,917 @@
+{
+  "items": [
+    {
+      "label": "Pulseiras",
+      "link": "/life/joias/pulseiras",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Disney",
+              "link": "/life/pulseiras/disney",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Lili",
+              "link": "/pulseira-life-lili-fecho-t-coracao-e-flecha-prata-pl00001451/p",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/life/pulseiras/sale",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/joias/pulseiras",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Braceletes",
+              "link": "/life/joias/pulseiras/braceletes",
+              "image": "Braceletes",
+              "submenu": null
+            },
+            {
+              "label": "Rígidas",
+              "link": "/life/joias/pulseiras/rigidas",
+              "image": "Rigidas",
+              "submenu": null
+            },
+            {
+              "label": "Life Men",
+              "link": "/life/pulseiras/life-men",
+              "image": "LifeMen",
+              "submenu": null
+            },
+            {
+              "label": "Maleáveis",
+              "link": "/life/joias/pulseiras/maleaveis",
+              "image": "Maleaveis",
+              "submenu": null
+            },
+            {
+              "label": "Tornozeleiras",
+              "link": "/life/joias/tornozeleiras",
+              "image": "Tornozeleiras",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Aço",
+              "link": "/categoria/life/pulseiras/material/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Ouro Amarelo",
+              "link": "/categoria/life/pulseiras/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Couro",
+              "link": "/categoria/life/pulseiras/material/couro",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss10.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/categoria/life/pulseiras/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/joias/pulseiras",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Pingentes",
+      "link": "/life/joias/pingentes",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/life/pingentes/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Disney",
+              "link": "/life/pingentes-life/disney",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Personalizados",
+              "link": "/life/pingentes/personalizados",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/life/pingentes/sale",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/joias/pingentes",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Pendentes",
+              "link": "/life/joias/pingentes/pingentes-pendentes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Separadores",
+              "link": "/life/joias/pingentes/pingentes-separadores",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Clip",
+              "link": "/life/joias/pingentes/pingentes-clip",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Correntes de segurança",
+              "link": "/life/joias/pingentes/correntes-de-seguranca",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Aço",
+              "link": "/life/pingentes/material/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/life/pingentes/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Ouro",
+              "link": "/life/pingentes/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Rosé",
+              "link": "/life/pingentes/material/ouro-rose",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Temas",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Alfabeto",
+              "link": "/temas/life/pingentes/alfabeto",
+              "image": "Alfabeto",
+              "submenu": null
+            },
+            {
+              "label": "Disney",
+              "link": "/life/pingentes-life/disney",
+              "image": "Disney",
+              "submenu": null
+            },
+            {
+              "label": "Lili",
+              "link": "/temas/life/pingentes/lili",
+              "image": "Lili",
+              "submenu": null
+            },
+            {
+              "label": "Gourmet",
+              "link": "/temas/life/pingentes/gourmet",
+              "image": "Gourmet",
+              "submenu": null
+            },
+            {
+              "label": "Proteção e Fé",
+              "link": "/temas/life/pingentes/protecao-e-fe",
+              "image": "Protecao",
+              "submenu": null
+            },
+            {
+              "label": "Amor e Romance",
+              "link": "/temas/life/pingentes/amor-e-romance",
+              "image": "AmorRomance",
+              "submenu": null
+            },
+            {
+              "label": "Esportes",
+              "link": "/temas/life/pingentes/esportes",
+              "image": "Esportes",
+              "submenu": null
+            },
+            {
+              "label": "Música",
+              "link": "/temas/life/pingentes/musica",
+              "image": "Musica",
+              "submenu": null
+            },
+            {
+              "label": "Separadores e Muranos",
+              "link": "/temas/life/pingentes/separadores-e-muranos",
+              "image": "SeparadoresMuranos",
+              "submenu": null
+            },
+            {
+              "label": "Brilho e Cores",
+              "link": "/temas/life/pingentes/brilho-e-cores",
+              "image": "BrilhoCores",
+              "submenu": null
+            },
+            {
+              "label": "Família e Amigos",
+              "link": "/temas/life/pingentes/familia-e-amigos",
+              "image": "FamiliaAmigos",
+              "submenu": null
+            },
+            {
+              "label": "Pets e Bichinhos",
+              "link": "/temas/life/pingentes/pets-e-bichinhos",
+              "image": "PetsBichinhos",
+              "submenu": null
+            },
+            {
+              "label": "Signos",
+              "link": "/life/pingentes-life/signos",
+              "image": "Signos",
+              "submenu": null
+            },
+            {
+              "label": "Datas Comemorativas",
+              "link": "/temas/life/pingentes/datas-comemorativas",
+              "image": "DatasComemorativas",
+              "submenu": null
+            },
+            {
+              "label": "Fashion",
+              "link": "/temas/life/pingentes/fashion",
+              "image": "Fashion",
+              "submenu": null
+            },
+            {
+              "label": "Profissões e Formaturas",
+              "link": "/temas/life/pingentes/profissoes-e-formaturas",
+              "image": "ProfissoesFormaturas",
+              "submenu": null
+            },
+            {
+              "label": "Viagens e Férias",
+              "link": "/temas/life/pingentes/viagens-e-ferias",
+              "image": "ViagensFerias",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/joias/pingentes",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Anéis",
+      "link": "/life/joias/aneis",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/life/aneis/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Alianças",
+              "link": "/life/joias/alianca-de-namoro",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Disney",
+              "link": "/life/aneis/disney",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/life/aneis/sale",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/joias/aneis",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Com pedra",
+              "link": "/life/joias/aneis/aneis-com-pedra",
+              "image": "ComPedras",
+              "submenu": null
+            },
+            {
+              "label": "Sem pedra",
+              "link": "/life/joias/aneis/aneis-lisos",
+              "image": "SemPedras",
+              "submenu": null
+            },
+            {
+              "label": "Alianças",
+              "link": "/life/joias/alianca-de-namoro",
+              "image": "Aliancas",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Aço",
+              "link": "/life/aneis/material/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Ouro",
+              "link": "/life/aneis/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Ródio Negro",
+              "link": "/life/aneis/material/rodio-negro",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/life/aneis/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Rosé",
+              "link": "/life/aneis/material/ouro-rose",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/joias/aneis",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Alianças",
+      "link": "/life/joias/alianca-de-namoro",
+      "image": null,
+      "firstLayer": true,
+      "submenu": null
+    },
+    {
+      "label": "Brincos",
+      "link": "/life/joias/brincos",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/life/brincos/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Disney",
+              "link": "/life/brincos/disney",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Lili",
+              "link": "/temas/life/brincos/lili",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/life/brincos/sale",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/joias/brincos",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Argolas",
+              "link": "/life/joias/brincos/argolas",
+              "image": "Argolas",
+              "submenu": null
+            },
+            {
+              "label": "Earcuffs",
+              "link": "/life/joias/brincos/earcuff",
+              "image": "Earcuffs",
+              "submenu": null
+            },
+            {
+              "label": "Piercings",
+              "link": "/life/joias/brincos/piercings",
+              "image": "Piercings",
+              "submenu": null
+            },
+            {
+              "label": "Studs",
+              "link": "/life/joias/brincos/brincos-studs",
+              "image": "Studs",
+              "submenu": null
+            },
+            {
+              "label": "Únicos",
+              "link": "/life/joias/brincos/brincos-unicos",
+              "image": "Unicos",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Prata",
+              "link": "/life/brincos/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Ouro",
+              "link": "/life/brincos/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Rosé",
+              "link": "/life/brincos/material/ouro-rose",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/joias/brincos",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Colares",
+      "link": "/life/joias/colares",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/life/colares/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Personalizados",
+              "link": "/life/colares/personalizaveis",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/joias/colares",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Colares",
+              "link": "/life/joias/colares",
+              "image": "Colares",
+              "submenu": null
+            },
+            {
+              "label": "Correntes",
+              "link": "/life/joias/correntes",
+              "image": "Correntes",
+              "submenu": null
+            },
+            {
+              "label": "Chokers",
+              "link": "/life/joias/colares/chokers",
+              "image": "Chokers",
+              "submenu": null
+            },
+            {
+              "label": "Pendentes",
+              "link": "/life/joias/pingentes/pingentes-pendentes",
+              "image": "Pendentes",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Aço",
+              "link": "/life/colares/material/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/life/colares/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Ouro",
+              "link": "/life/colares/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Banho Rosé",
+              "link": "/life/colares/material/ouro-rose",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/joias/colares",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Acessórios",
+      "link": "/life/acessorios",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/life/acessorios/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Disney",
+              "link": "/life/acessorios/disney",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/life/acessorios",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Perfumes",
+              "link": "/life/acessorios/perfumes",
+              "image": "Perfumes",
+              "submenu": null
+            },
+            {
+              "label": "Cadernos",
+              "link": "/life/acessorios/cadernos",
+              "image": "Cadernos",
+              "submenu": null
+            },
+            {
+              "label": "Porta-Joias",
+              "link": "/life/acessorios/porta-joias",
+              "image": "PortaJoias",
+              "submenu": null
+            },
+            {
+              "label": "Para Pets",
+              "link": "/life/acessorios/para-pets",
+              "image": "ParaPets",
+              "submenu": null
+            },
+            {
+              "label": "Lenços",
+              "link": "/life/acessorios/lencos",
+              "image": "https://qavivara.vteximg.com.br/arquivos/lenco.png",
+              "submenu": null
+            },
+            {
+              "label": "Canetas",
+              "link": "/life/acessorios/canetas",
+              "image": "Canetas",
+              "submenu": null
+            },
+            {
+              "label": "Fivelas",
+              "link": "/life/acessorios/fivelas",
+              "image": "Fivela",
+              "submenu": null
+            },
+            {
+              "label": "Óculos de Sol",
+              "link": "/life/acessorios/oculos-de-sol",
+              "image": "https://qavivara.vteximg.com.br/arquivos/sun-glasses.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/life/acessorios",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Masculino",
+      "link": "/para-eles",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/para-eles/life/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos os produtos",
+              "link": "/para-eles",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Modelos",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Colares",
+              "link": "/life/masculino/colares",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pingentes",
+              "link": "/life/masculino/pingentes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Anéis",
+              "link": "/life/masculino/aneis",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Correntes",
+              "link": "/life/masculino/correntes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras",
+              "link": "/life/pulseiras/life-men",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Aço",
+              "link": "/life/materiais/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            },
+            {
+              "label": "Couro",
+              "link": "/colecao/life-masculino/material/couro",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss10.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/colecao/life-masculino/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Tecido",
+              "link": "/colecao/life-masculino/material/tecido",
+              "image": "https://qavivara.vteximg.com.br/arquivos/tecido.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Todos os Produtos",
+          "link": "/para-eles",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Coleções",
+      "link": "/colecoes-life",
+      "image": null,
+      "firstLayer": true,
+      "submenu": null
+    },
+    {
+      "label": "Presentes",
+      "link": "/presentes",
+      "image": null,
+      "firstLayer": true,
+      "submenu": null
+    },
+    {
+      "label": "Disney",
+      "link": "/colecao/life-disney",
+      "image": null,
+      "firstLayer": true,
+      "submenu": null
+    }
+  ]
+}

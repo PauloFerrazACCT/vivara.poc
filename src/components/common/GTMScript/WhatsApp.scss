@@ -1,0 +1,142 @@
+.activate-chatbot button,
+.chatbot-itens-wrapper .activate-chatbot-btn-2 {
+  background-color: transparent;
+  border: 0;
+}
+
+p.open-chatbot-title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-itens-wrapper button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 312px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #ffa687;
+  border-radius: 70px;
+}
+
+.force-position {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.force-position p {
+  font-size: 19px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.chatbot-itens-wrapper p {
+  margin-top: 2px;
+  color: #737373;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+}
+
+.chatbot-itens-wrapper button i {
+  margin-right: 10px;
+  color: #f08769;
+  font-size: 31px;
+}
+
+.chatbot-container {
+  position: fixed;
+  right: 0;
+  bottom: 85px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.activate-chatbot {
+  cursor: pointer;
+}
+
+.activate-chatbot img {
+  width: 80px;
+}
+
+.open-chatbot-container {
+  position: absolute;
+  right: 70px;
+  bottom: 20px;
+  display: none;
+  width: 360px;
+  height: 322px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+}
+
+.open-chatbot-container.active {
+  display: initial;
+  background-color: white;
+}
+
+.open-chatbot-container .open-chatbot-title {
+  margin-top: 28px;
+  margin-bottom: 44px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.open-chatbot-container .chatbot-itens-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-chatbot-container .chatbot-itens-wrapper a {
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+.open-chatbot-container .chatbot-itens-wrapper img {
+  width: 230px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .activate-chatbot {
+    bottom: 120px;
+  }
+
+  .activate-chatbot img {
+    width: 100px;
+  }
+
+  .open-chatbot-container {
+    right: 90px;
+    width: 370px;
+  }
+
+  .open-chatbot-container .open-chatbot-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .open-chatbot-container .chatbot-itens-wrapper img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .open-chatbot-container {
+    right: 15px;
+    bottom: 70px;
+    width: 343px;
+  }
+}

@@ -1,0 +1,435 @@
+[
+  {
+    "id": "home",
+    "name": "Home Page",
+    "configurationSchemaSets": []
+  },
+  {
+    "id": "globalComponents",
+    "name": "Global Components",
+    "configurationSchemaSets": []
+  },
+  {
+    "id": "plp",
+    "name": "PLP",
+    "configurationSchemaSets": [
+      {
+        "name": "Parameters",
+        "configurations": [
+          {
+            "name": "Collection",
+            "schema": {
+              "title": "Collection",
+              "description": "Definition of a Collection for the CMS",
+              "oneOf": [
+                {
+                  "title": "Category",
+                  "description": "Configure a Category",
+                  "type": "object",
+                  "required": ["categoryId", "sort"],
+                  "properties": {
+                    "categoryId": {
+                      "title": "Category ID",
+                      "type": "string"
+                    },
+                    "sort": {
+                      "title": "Default ordering",
+                      "type": "string",
+                      "default": "\"\"",
+                      "enum": [
+                        "\"\"",
+                        "discount:desc",
+                        "release:desc",
+                        "name:asc",
+                        "name:desc",
+                        "orders:desc",
+                        "price:asc",
+                        "price:desc"
+                      ],
+                      "enumNames": [
+                        "Relevance",
+                        "Discount",
+                        "Release date",
+                        "Name, ascending",
+                        "Name, descending",
+                        "Sales",
+                        "Price: Low to High",
+                        "Price: High to Low"
+                      ]
+                    },
+                    "seo": {
+                      "type": "object",
+                      "title": "Seo",
+                      "widget": {
+                        "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+                      },
+                      "required": ["title", "description", "slug"],
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "title": "Title",
+                          "description": "Appears in the browser tab and is suggested for search engines",
+                          "default": "Page title"
+                        },
+                        "slug": {
+                          "type": "string",
+                          "title": "URL slug",
+                          "description": "Final part of the page's address. No spaces allowed.",
+                          "default": "/path/to/page",
+                          "pattern": "^/([a-zA-Z0-9]|-|/|_)*"
+                        },
+                        "description": {
+                          "type": "string",
+                          "title": "Description (Meta description)",
+                          "description": "Suggested for search engines",
+                          "default": "Page description"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "title": "Brand",
+                  "description": "Configure a Brand",
+                  "type": "object",
+                  "required": ["brandId", "sort"],
+                  "properties": {
+                    "brandId": {
+                      "title": "Brand ID",
+                      "type": "string"
+                    },
+                    "sort": {
+                      "title": "Default ordering",
+                      "type": "string",
+                      "default": "\"\"",
+                      "enum": [
+                        "\"\"",
+                        "discount:desc",
+                        "release:desc",
+                        "name:asc",
+                        "name:desc",
+                        "orders:desc",
+                        "price:asc",
+                        "price:desc"
+                      ],
+                      "enumNames": [
+                        "Relevance",
+                        "Discount",
+                        "Release date",
+                        "Name, ascending",
+                        "Name, descending",
+                        "Sales",
+                        "Price: Low to High",
+                        "Price: High to Low"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "title": "Collection",
+                  "description": "Configure a Collection",
+                  "type": "object",
+                  "required": ["clusterId", "sort", "seo"],
+                  "properties": {
+                    "clusterId": {
+                      "title": "Collection ID",
+                      "type": "string"
+                    },
+                    "sort": {
+                      "title": "Default ordering",
+                      "type": "string",
+                      "default": "\"\"",
+                      "enum": [
+                        "\"\"",
+                        "discount:desc",
+                        "release:desc",
+                        "name:asc",
+                        "name:desc",
+                        "orders:desc",
+                        "price:asc",
+                        "price:desc"
+                      ],
+                      "enumNames": [
+                        "Relevance",
+                        "Discount",
+                        "Release date",
+                        "Name, ascending",
+                        "Name, descending",
+                        "Sales",
+                        "Price: Low to High",
+                        "Price: High to Low"
+                      ]
+                    },
+                    "seo": {
+                      "type": "object",
+                      "title": "Seo",
+                      "widget": {
+                        "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+                      },
+                      "required": ["title", "description", "slug"],
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "title": "Title",
+                          "description": "Appears in the browser tab and is suggested for search engines",
+                          "default": "Page title"
+                        },
+                        "slug": {
+                          "type": "string",
+                          "title": "URL slug",
+                          "description": "Final part of the page's address. No spaces allowed.",
+                          "default": "/path/to/page",
+                          "pattern": "^/([a-zA-Z0-9]|-|/|_)*"
+                        },
+                        "description": {
+                          "type": "string",
+                          "title": "Description (Meta description)",
+                          "description": "Suggested for search engines",
+                          "default": "Page description"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seo",
+    "name": "Global SEO Settings",
+    "configurationSchemaSets": [
+      {
+        "name": "SEO",
+        "configurations": [
+          {
+            "name": "siteMetadata",
+            "schema": {
+              "title": "Site Metadata",
+              "description": "Configure global site metadata",
+              "type": "object",
+              "widget": {
+                "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+              },
+              "properties": {
+                "title": {
+                  "title": "Default page title",
+                  "description": "Display this title when no other tile is available",
+                  "type": "string",
+                  "default": "Store Theme | VTEX SFJ"
+                },
+                "description": {
+                  "title": "Meta tag description",
+                  "type": "string",
+                  "default": "A beautifuly designed site for general VTEX stores"
+                },
+                "titleTemplate": {
+                  "title": "Title template to be used in category/product pages",
+                  "type": "string",
+                  "default": "%s | Store Theme"
+                }
+              }
+            }
+          },
+          {
+            "name": "facebook",
+            "schema": {
+              "title": "Facebook",
+              "description": "How your store is shared on Facebook",
+              "type": "object",
+              "required": ["thumbnail"],
+              "widget": {
+                "ui:ObjectFieldTemplate": "FacebookPreview"
+              },
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "description": "Store title in facebook",
+                  "default": "Marin Brasil Tramontina"
+                },
+                "thumbnail": {
+                  "type": "string",
+                  "title": "Thumbnail",
+                  "description": "Thumbnail to show in facebook when someone is sharing you store. The image must be bigger than 200px/200px",
+                  "widget": {
+                    "ui:widget": "image-uploader"
+                  }
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                  "description": "Site description when sharing on facebook",
+                  "default": "A beautifuly designed site for general VTEX stores"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "institutionalPage",
+    "name": "Institutional page",
+    "configurationSchemaSets": [
+      {
+        "name": "SEO",
+        "configurations": [
+          {
+            "name": "siteMetadataWithSlug",
+            "schema": {
+              "title": "Site Metadata",
+              "description": "Configure global site metadata",
+              "type": "object",
+              "widget": {
+                "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+              },
+              "properties": {
+                "title": {
+                  "title": "Default page title",
+                  "description": "Display this title when no other tile is available",
+                  "type": "string",
+                  "default": "Store Theme | VTEX SFJ"
+                },
+                "description": {
+                  "title": "Meta tag description",
+                  "type": "string",
+                  "default": "A beautifuly designed site for general VTEX stores"
+                },
+                "titleTemplate": {
+                  "title": "Title template to be used in category/product pages",
+                  "type": "string",
+                  "default": "%s | Store Theme"
+                },
+                "slug": {
+                  "title": "URL Slug",
+                  "type": "string",
+                  "default": "/landing-page-url"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Config",
+        "configurations": [
+          {
+            "name": "slugAndFilterConfig",
+            "schema": {
+              "title": "Config",
+              "description": "Configure slug and filter on institutionalPage",
+              "type": "object",
+              "widget": {
+                "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+              },
+              "properties": {
+                "slug": {
+                  "title": "URL Slug",
+                  "type": "string",
+                  "default": "/landing-page-url"
+                },
+                "sort": {
+                  "title": "Default ordering",
+                  "type": "string",
+                  "default": "score_desc",
+                  "enum": [
+                    "score_desc",
+                    "discount_desc",
+                    "release_desc",
+                    "name_asc",
+                    "name_desc",
+                    "orders_desc",
+                    "price_asc",
+                    "price_desc"
+                  ],
+                  "enumNames": [
+                    "Mais relevantes",
+                    "Maior desconto",
+                    "Novidades",
+                    "Alfabético (Z-A)",
+                    "Alfabético (A-Z)",
+                    "Mais vendidos",
+                    "Menor Preço",
+                    "Maior Preço"
+                  ]
+                },
+                "filterGroup": {
+                  "title": "Filter Group",
+                  "type": "object",
+                  "description": "Filter Group",
+                  "properties": {
+                    "allItems": {
+                      "type": "array",
+                      "minItems": 0,
+                      "items": {
+                        "title": "Filter Item",
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "title": "Key",
+                            "type": "string",
+                            "oneOf": [
+                              {
+                                "type": "string",
+                                "enum": ["categoria"],
+                                "title": "Categoria"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["coleção"],
+                                "title": "Coleção (especificação de produto)"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["material"],
+                                "title": "Material"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["brand"],
+                                "title": "Marca"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["productClusterIds"],
+                                "title": "ID de Coleção (catálogo)"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["sugestão"],
+                                "title": "Sugestão"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["garantia"],
+                                "title": "Garantia"
+                              },
+                              {
+                                "type": "string",
+                                "enum": ["pedras"],
+                                "title": "Pedras"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "title": "value",
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+@import "src/styles/scaffold";
+
+.ProductproductBenefits {
+  display: block;
+  padding: var(--space-5) 0;
+  color: #000;
+
+  @include media("<notebook") {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: var(--space-3);
+    font-weight: 600;
+    font-family: var(--serif);
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: 270px;
+    padding-left: var(--space-5);
+    list-style-type: disc;
+
+    &Item {
+      margin-bottom: var(--space-1);
+      color: #737373;
+      font-size: .875rem;
+    }
+  }
+}

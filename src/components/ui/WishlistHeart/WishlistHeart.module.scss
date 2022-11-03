@@ -1,0 +1,23 @@
+[data-wishlist-button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+}
+
+[data-wishlist-button-bg="true"] {
+  background-color: black;
+}
+
+[data-wishlist-shelf="true"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  [data-wishlist-shelf-outline] svg path {
+    stroke: #737373;
+  }
+}

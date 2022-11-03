@@ -1,0 +1,49 @@
+// https://qavivara.myvtex.com/api/dataentities/wishlist/schemas/wishlist-schema
+
+{
+  "title": "Wishlist",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "title": "ID do Usuário",
+      "type": "string"
+    },
+    "name": {
+      "title": "Nome da Lista",
+      "type": "string"
+    },
+    "productList": {
+      "title": "Lista de Produtos",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "title": "ID do Produto",
+            "type": "string"
+          },
+          "size": {
+            "title": "Tamanho",
+            "type": "number"
+          }
+        },
+        "required": ["productId"]
+      }
+    },
+    "isDefault": {
+      "title": "Lista de Favoritos é a padrão?",
+      "type": "boolean"
+    }
+  },
+  "required": ["userId", "name", "productList", "isDefault"],
+  "v-indexed": ["userId", "name", "productList", "isDefault"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": false,
+    "publicRead": ["userId", "name", "productList", "isDefault"],
+    "publicWrite": ["userId", "name", "productList", "isDefault"],
+    "publicFilter": ["userId", "name", "productList", "isDefault"]
+  },
+  "v-cache": false
+}

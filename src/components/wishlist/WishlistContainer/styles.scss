@@ -1,0 +1,27 @@
+.create-wishlist-btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: #ffa67d;
+  font-weight: 400;
+  font-family: var(--sans-serif);
+  text-transform: uppercase;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+}
+
+.wishlist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 324px);
+  gap: 40px;
+  margin: 0 auto;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fit, 210px);
+    margin: 0;
+  }
+}

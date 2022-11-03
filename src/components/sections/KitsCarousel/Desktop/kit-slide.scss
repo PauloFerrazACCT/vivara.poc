@@ -1,0 +1,113 @@
+.kit-slide__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1024px;
+  margin: auto;
+
+  .plus-icon-container {
+    position: absolute;
+    top: 42%;
+    left: 30.2%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #000;
+  }
+
+  .equal-icon-container {
+    position: absolute;
+    top: 42%;
+    left: 62.5%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+  }
+
+  .total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 212px;
+    height: 400px;
+    margin-left: 135px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 110px;
+
+      h3 {
+        margin-bottom: 26px;
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: "Cormorant Garamond", serif;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+      }
+
+      .total-price {
+        margin-bottom: 8px;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+      }
+
+      .installment-container {
+        margin-bottom: 10px;
+        color: #737373;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+      }
+
+      .product-names {
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Cormorant Garamond", serif;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+
+    .button {
+      width: 212px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      &:disabled {
+        cursor: initial;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .kit-slide__container {
+    width: 1100px;
+
+    .plus-icon-container {
+      left: 31.6%;
+    }
+  }
+}

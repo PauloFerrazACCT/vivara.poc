@@ -1,0 +1,253 @@
+.buttonCustom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin-top: 1rem;
+  color: #030101;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+
+  &__icon {
+    position: absolute;
+    right: 14px;
+    height: 20px;
+  }
+}
+
+.modalCustom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(196 196 196 / 60%);
+}
+
+.modalCustomContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  padding: 25px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: #000;
+  background-color: #fff;
+}
+
+.closeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 32px;
+}
+
+.closeButton {
+  font-size: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modalTitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modalDescription {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.modalImageContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImage {
+  position: relative;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.modalCustomText {
+  position: relative;
+  top: 50%;
+  width: 200px;
+  color: #000;
+  font-size: 14px;
+  font-family: "Times New Roman", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  span {
+    display: block;
+    height: 20px;
+  }
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.modalFormText {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.modalFormInput {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #737373;
+
+  &__icon {
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.7486 1.69221L2.27533 10.1655L1.04199 14.5365L5.4136 13.3038L13.8869 4.83047C14.7531 3.96368 14.7531 2.55837 13.8869 1.69221C13.0201 0.825417 11.6148 0.825417 10.7486 1.69221Z' stroke='%23FFA67D' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat;
+    background-position: right 3% bottom 50%;
+  }
+}
+
+.modalButtonClear {
+  margin-bottom: 1rem;
+  color: #f08769;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.modalButtonSave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.modalButtonAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.modalButtonAdd:disabled {
+  cursor: not-allowed;
+}
+
+.modalButtonAdd:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 980px) {
+  .modalCustomContainer {
+    display: grid;
+    grid-template-columns: calc(100% - 427px) 427px;
+    width: 1067px;
+    height: fit-content;
+    padding: 25px 0;
+    overflow-y: hidden;
+  }
+
+  .closeContainer {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 0 26px;
+  }
+
+  .modalTitleContainer {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 0 43px;
+  }
+
+  .modalTitle {
+    font-size: 24px;
+  }
+
+  .modalDescription {
+    margin-bottom: 2rem;
+  }
+
+  .modalImageContainer {
+    grid-row: 1/5;
+    grid-column: 1/2;
+  }
+
+  .modalButtonClear {
+    margin-bottom: 2rem;
+  }
+
+  .modalCustomText {
+    position: absolute;
+    top: unset;
+    width: 200px;
+    color: #000;
+    font-family: "Times New Roman", sans-serif;
+    line-height: 25px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+    }
+  }
+
+  .modalImage {
+    width: 100%;
+    max-height: 445px;
+  }
+
+  .modalForm {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    padding: 0 43px;
+  }
+}

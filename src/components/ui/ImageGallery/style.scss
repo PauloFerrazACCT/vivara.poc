@@ -1,0 +1,260 @@
+@import "src/styles/scaffold";
+
+.slider-container {
+  max-width: 375px;
+
+  .zoom-container {
+    .zoom {
+      .slick-track {
+        // The "!important" was necessary to adapt the slider behavior with the zoom component
+        .slick-slide {
+          display: none;
+          opacity: 0 !important; /* stylelint-disable-line declaration-no-important */
+
+          .slider-image-core {
+            figure.iiz {
+              @media (min-width: 1024px) {
+                overflow: visible;
+              }
+
+              button.iiz__close.iiz__close--visible {
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: transparent;
+                background-image: url("https://icon-library.com/images/svg-close-icon/svg-close-icon-28.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              }
+
+              button.iiz__close--visible::before {
+                display: none;
+              }
+            }
+          }
+
+          .slider-image-zoom-inner-image {
+            height: 100%;
+
+            div {
+              height: 100%;
+
+              @include media(">=notebook") {
+                .iiz__img {
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          .iiz__btn {
+            width: fit-content;
+            padding: 0 3px;
+
+            &::before {
+              display: flex;
+              align-items: center;
+              width: fit-content;
+              font-size: 12px;
+              background-image: none;
+              content: "Clique na imagem para ampliar";
+            }
+          }
+        }
+
+        .slick-active {
+          left: 0 !important; /* stylelint-disable-line declaration-no-important */
+          display: block;
+          opacity: 1 !important; /* stylelint-disable-line declaration-no-important */
+        }
+      }
+    }
+  }
+}
+
+.slick-slider {
+  touch-action: auto !important; /* stylelint-disable-line declaration-no-important */
+}
+
+@media (min-width: 910px) {
+  .slider-container {
+    max-width: 864px;
+    max-height: 520px;
+
+    .zoom-container {
+      width: 864px;
+      height: 520px;
+      overflow: hidden;
+      background-color: #000000;
+
+      .zoom {
+        background-color: #fff;
+        opacity: 0.96;
+
+        .slider-image-core {
+          position: relative;
+          display: flex !important; /* stylelint-disable-line declaration-no-important */
+          align-items: center;
+          justify-content: center;
+          max-width: 864px;
+          height: 520px;
+
+          .collection-container__video {
+            width: 100%;
+          }
+
+          video {
+            width: 100%;
+            max-width: 864px;
+            height: 490px;
+          }
+
+          .video {
+            width: 100%;
+            max-width: 864px;
+            height: 520px;
+          }
+
+          div[data-gatsby-image-wrapper] {
+            position: absolute;
+            top: calc(50% - 500px);
+            left: calc(50% - 500px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            height: 1000px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-track {
+  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.slick-active.slick-current {
+  .image-slide {
+    border: 1px black solid;
+  }
+}
+
+.slick-dots li button::before {
+  font-size: 8px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+  border: solid 1px #000000;
+}
+
+.slider-container-minor {
+  display: none;
+
+  @include media(">=notebook") {
+    display: block;
+    max-width: 484px;
+    max-height: 92px;
+    margin-left: 190px;
+  }
+}
+
+.image-slide {
+  max-width: 92px;
+  margin: 0 20px;
+
+  &.video {
+    position: relative;
+
+    button {
+      position: absolute;
+      right: 0;
+      bottom: calc(50% - 20px);
+      left: 0;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      padding: 0;
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+
+.slick-arrow {
+  top: 98%;
+
+  &.slick-prev {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    &::before {
+      display: block;
+      width: 15px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='13' height='22' viewBox='0 0 13 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21L2 11L12 1.00458' stroke='black' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+
+  &.slick-next {
+    right: -60px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    &::before {
+      display: block;
+      width: 15px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='13' height='22' viewBox='0 0 13 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11L1 20.9954' stroke='black' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .slider-container {
+    .slider-image-zoom-inner-image {
+      background-color: #a69f9f;
+    }
+
+    .slider-image-core {
+      position: relative;
+
+      img {
+        z-index: 1;
+        opacity: 0.9 !important; /* stylelint-disable-line declaration-no-important */
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .collection-container__video {
+        height: auto;
+        margin-top: 0;
+
+        .video {
+          height: auto;
+        }
+      }
+    }
+  }
+}

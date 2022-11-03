@@ -1,0 +1,17 @@
+.wishlist-card__imgs-fallback {
+  width: 88px;
+  height: 88px;
+  background: #f0f0f0;
+
+  &:first-child {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+
+  @media (min-width: 640px) {
+    width: 65px;
+    height: 65px;
+  }
+}

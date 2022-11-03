@@ -1,0 +1,82 @@
+.my-account-area {
+  width: 100%;
+  min-height: 50vh;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+}
+
+.sizeguide-page__container {
+  .my-account-area {
+    width: 100%;
+    min-height: 50vh;
+    padding: 1.5rem 0 1.5rem 1rem;
+    background-color: #f9fafb;
+
+    @media (min-width: 640px) {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.my-account-area__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    margin: auto 100px;
+  }
+}
+
+.my-account-area__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 640px) {
+    margin-bottom: 2.25rem;
+  }
+}
+
+.my-account-area__title {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: #000000;
+
+  h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: var(--serif);
+    line-height: 1.9rem;
+  }
+
+  a {
+    margin-right: 1rem;
+
+    &.show-on-desktop-btn {
+      @media (min-width: 640px) {
+        display: inline-flex;
+        color: #f08769;
+
+        &:visited,
+        &:focus-visible {
+          color: #f08769;
+          box-shadow: none;
+        }
+      }
+    }
+
+    @media (min-width: 640px) {
+      display: none;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      color: #f08769;
+    }
+  }
+}

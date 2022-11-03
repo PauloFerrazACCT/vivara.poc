@@ -1,0 +1,16 @@
+[data-wishlist-selector] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 128px;
+  padding: 3px 10px 3px 16px;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 50px;
+
+  span {
+    color: #585858;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}

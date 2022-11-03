@@ -1,0 +1,2174 @@
+[
+  {
+    "name": "Fold",
+    "schema": {
+      "title": "Fold",
+      "description": "Components below this will be loaded as the user scrolls",
+      "type": "null"
+    }
+  },
+  {
+    "name": "unfoldBreak",
+    "schema": {
+      "title": "unfoldBreak",
+      "description": "Components below this will be loaded as the user scrolls",
+      "type": "null"
+    }
+  },
+  {
+    "name": "unfoldBreakCarousel",
+    "schema": {
+      "title": "Carouasdfsel",
+      "description": "A sadf of images",
+      "type": "object",
+      "properties": {
+        "allItems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Images",
+            "type": "object",
+            "properties": {
+              "sources": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "title": "Responsive image",
+                  "type": "object",
+                  "properties": {
+                    "srcSet": {
+                      "title": "Image",
+                      "type": "string",
+                      "widget": {
+                        "ui:widget": "image-uploader"
+                      }
+                    },
+                    "media": {
+                      "title": "Device type",
+                      "type": "string",
+                      "description": "In which device the image will be shown",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": ["(max-width: 40em)"],
+                          "title": "mobile"
+                        },
+                        {
+                          "type": "string",
+                          "enum": ["(min-width: 40em)"],
+                          "title": "desktop"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": ["media"]
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Banners",
+    "schema": {
+      "title": "6 banners group",
+      "description": "Home banners below carrousel",
+      "type": "object",
+      "properties": {
+        "banners": {
+          "type": "array",
+          "maxItems": 6,
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Carousel",
+    "schema": {
+      "title": "Carousel",
+      "description": "A carousel of images",
+      "type": "object",
+      "properties": {
+        "allItems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Images",
+            "type": "object",
+            "properties": {
+              "sources": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "title": "Responsive image",
+                  "type": "object",
+                  "required": ["media", "srcSet"],
+                  "properties": {
+                    "srcSet": {
+                      "title": "Image",
+                      "type": "string",
+                      "widget": {
+                        "ui:widget": "image-uploader"
+                      }
+                    },
+                    "media": {
+                      "title": "Device type",
+                      "type": "string",
+                      "description": "In which device the image will be shown",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": ["(max-width: 40em)"],
+                          "title": "mobile"
+                        },
+                        {
+                          "type": "string",
+                          "enum": ["(min-width: 40em)"],
+                          "title": "desktop"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "RichText",
+    "schema": {
+      "title": "Rich Text Vivara",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "title": "Text Garamond Vivara",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "RichTextLife",
+    "schema": {
+      "title": "Rich Text Life",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "title": "Text Roboto Life",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "RichTextFeatured",
+    "schema": {
+      "title": "Texto em Destaque",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "content": {
+          "type": "string",
+          "title": "Text Area",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "StaticBanner",
+    "schema": {
+      "title": "Static Banner",
+      "description": "Banner component with a single image",
+      "type": "object",
+      "required": ["href", "sources", "alt"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "href": {
+          "title": "Link",
+          "description": "After clicking the image, the user will navigate to this link",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Description",
+          "description": "How users who cannot open the image read the link",
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "title": "Responsive image",
+            "type": "object",
+            "properties": {
+              "srcSet": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "media": {
+                "title": "Device type",
+                "type": "string",
+                "description": "In which device the image will be shown",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "enum": ["(max-width: 48em)"],
+                    "title": "mobile"
+                  },
+                  {
+                    "type": "string",
+                    "enum": ["(min-width: 48em)"],
+                    "title": "desktop"
+                  }
+                ]
+              }
+            },
+            "required": ["media", "srcSet"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NavigationCategory",
+    "schema": {
+      "title": "NavigationCategory",
+      "description": "Home images below Banner Vivara",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Category Title",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle",
+          "description": "Category Subtitle",
+          "type": "string"
+        },
+        "banners": {
+          "type": "array",
+          "maxItems": 6,
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "label": {
+                "title": "Category name",
+                "description": "Category name",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NavigationImagesButtons",
+    "schema": {
+      "title": "NavigationImagesButtons",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID anchor name",
+          "description": "ID Anchor name",
+          "type": "string"
+        },
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "title": {
+          "title": "Title component",
+          "description": "Title component",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle component",
+          "description": "Subtitle component",
+          "type": "string"
+        },
+        "banners": {
+          "type": "array",
+          "maxItems": 6,
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "TextAnchor",
+    "schema": {
+      "title": "Text Anchor",
+      "description": "Text to anchor the page",
+      "type": "object",
+      "properties": {
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "icontheme": {
+          "title": "Icon Color",
+          "type": "string",
+          "description": "Select the Icon Color",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["1"],
+              "title": "Black Icon"
+            },
+            {
+              "type": "string",
+              "enum": ["2"],
+              "title": "White Icon"
+            }
+          ]
+        },
+        "fontfamily": {
+          "title": "Font Family ",
+          "type": "string",
+          "description": "Select the Font Family",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["1"],
+              "title": "Cormorant Garamond"
+            },
+            {
+              "type": "string",
+              "enum": ["2"],
+              "title": "Roboto"
+            }
+          ]
+        },
+        "menu": {
+          "type": "array",
+          "maxItems": 8,
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "title": "Anchor Items",
+            "properties": {
+              "label": {
+                "title": "Label anchor name",
+                "description": "Label name",
+                "type": "string"
+              },
+              "id": {
+                "title": "ID anchor name",
+                "description": "ID Anchor name",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NavigationCollection",
+    "schema": {
+      "title": "NavigationCollection",
+      "description": "Home images below Navigation Category",
+      "type": "object",
+      "required": ["title", "buttonLabel", "buttonLink", "collections"],
+      "properties": {
+        "title": {
+          "title": "Title component",
+          "description": "Title component",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle component",
+          "description": "Subtitle component",
+          "type": "string"
+        },
+        "isAnchorButton": {
+          "default": false,
+          "type": "boolean",
+          "title": "O botão é um scroll para a lista de produtos na mesma página?"
+        },
+        "buttonLabel": {
+          "title": "Button name",
+          "description": "Button name",
+          "type": "string"
+        },
+        "buttonLink": {
+          "title": "URL address",
+          "description": "Button url",
+          "type": "string"
+        },
+        "collections": {
+          "type": "array",
+          "maxItems": 14,
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "label": {
+                "title": "Collection name",
+                "description": "Collection name",
+                "type": "string"
+              },
+              "description": {
+                "title": "Collection description",
+                "description": "Collection description",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NavigattionTabs",
+    "schema": {
+      "title": "NavigattionTabs component",
+      "description": "NavigattionTabs component",
+      "type": "object",
+      "properties": {
+        "navigattionTabs": {
+          "type": "array",
+          "maxItems": 10,
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src1": {
+                "title": "Image 1",
+                "description": "Image 1",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "src2": {
+                "title": "Image 2",
+                "description": "Image 2",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "tabLabel": {
+                "title": "Tab Label",
+                "description": "Label on each tab item",
+                "type": "string"
+              },
+              "title": {
+                "title": "Title",
+                "description": "Title on each item",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "description": "Description on each item",
+                "type": "string"
+              }
+            },
+            "required": ["src1", "src2", "href", "alt", "tabLabel"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ImageTextImage",
+    "schema": {
+      "title": "ImageTextImage component",
+      "description": "ImageTextImage component",
+      "type": "object",
+      "properties": {
+        "ImageTextImage": {
+          "type": "array",
+          "maxItems": 10,
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src1": {
+                "title": "Image 1",
+                "description": "Image 1",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "src2": {
+                "title": "Image 2",
+                "description": "Image 2",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "title": {
+                "title": "Title",
+                "description": "Title on each item",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "description": "Description on each item",
+                "type": "string"
+              },
+              "buttonText": {
+                "title": "Description Text",
+                "description": "Optional Text that the button will show; Default value is 'Ver todos os presentes'",
+                "type": "string"
+              },
+              "buttonTextColor": {
+                "title": "Button text Hexadecimal color",
+                "description": "Optional color; Default value is 'white'",
+                "type": "string"
+              },
+              "buttonBackground": {
+                "title": "Hexadecimal color",
+                "description": "Optional color; Default value is 'black'",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "NavigationButtons",
+    "schema": {
+      "title": "NavigationButtons component",
+      "description": "NavigationButtons component",
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "title": "Title",
+          "description": "Component Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "Component Description",
+          "type": "string"
+        },
+        "buttonLayout": {
+          "oneOf": [
+            {
+              "title": "NavigationButtons with subtitle",
+              "type": "object",
+              "description": "NavigationButtons divided by groups with subtitles",
+              "properties": {
+                "allItems": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "title": "Button Group",
+                    "type": "object",
+                    "properties": {
+                      "buttons": {
+                        "title": "Navigation Buttons",
+                        "type": "object",
+                        "properties": {
+                          "subtitle": {
+                            "title": "Button Group Subtitle",
+                            "description": "Button Group Subtitle",
+                            "type": "string"
+                          },
+                          "allItems": {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                              "title": "Navigation Button",
+                              "type": "object",
+                              "properties": {
+                                "label": {
+                                  "title": "Label",
+                                  "type": "string"
+                                },
+                                "filterKey": {
+                                  "title": "Filter Key",
+                                  "type": "string"
+                                },
+                                "filterValue": {
+                                  "title": "Filter Value",
+                                  "type": "string"
+                                }
+                              },
+                              "required": ["label", "filterKey", "filterValue"]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "title": "NavigationButtons without subtitle",
+              "type": "object",
+              "description": "NavigationButtons without subtitle",
+              "properties": {
+                "allItems": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "title": "Navigation Button",
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "title": "Label",
+                        "type": "string"
+                      },
+                      "link": {
+                        "title": "Link",
+                        "type": "string"
+                      }
+                    },
+                    "required": ["label", "link"]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "CollectionSlider",
+    "schema": {
+      "title": "CollectionSlider",
+      "description": "A slider of collection cards",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Component Title",
+          "description": "Component Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Component Description",
+          "description": "Component Description",
+          "type": "string"
+        },
+        "collections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "title": "Collection Card",
+            "properties": {
+              "src": {
+                "title": "Collection Image",
+                "description": "Collection Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "label": {
+                "title": "Collection name",
+                "description": "Collection name",
+                "type": "string"
+              },
+              "description": {
+                "title": "Collection description",
+                "description": "Collection description",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt", "label"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ShowcaseBanner",
+    "schema": {
+      "title": "Showcase Banner",
+      "description": "A carousel of showcase banners",
+      "type": "object",
+      "properties": {
+        "allItems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Images",
+            "type": "object",
+            "required": ["href"],
+            "properties": {
+              "sources": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "title": "Responsive image",
+                  "type": "object",
+                  "properties": {
+                    "srcSet": {
+                      "title": "Image",
+                      "type": "string",
+                      "widget": {
+                        "ui:widget": "image-uploader"
+                      }
+                    },
+                    "media": {
+                      "title": "Device type",
+                      "type": "string",
+                      "description": "In which device the image will be shown",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": ["(max-width: 40em)"],
+                          "title": "mobile"
+                        },
+                        {
+                          "type": "string",
+                          "enum": ["(min-width: 40em)"],
+                          "title": "desktop"
+                        }
+                      ]
+                    }
+                  },
+                  "required": ["media", "srcSet"]
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              },
+              "title": {
+                "title": "Showcase Banner Title",
+                "type": "string"
+              },
+              "description": {
+                "title": "Showcase Banner description",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "SearchBanner",
+    "schema": {
+      "title": "Search Banner",
+      "description": "Banners in PLP page",
+      "type": "object",
+      "required": ["desktop", "mobile", "alt"],
+      "properties": {
+        "title": {
+          "title": "Image Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Image description",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Image alt",
+          "type": "string"
+        },
+        "desktop": {
+          "title": "Desktop Banner",
+          "type": "object",
+          "required": ["srcSet"],
+          "properties": {
+            "srcSet": {
+              "title": "Desktop Image",
+              "type": "string",
+              "widget": {
+                "ui:widget": "image-uploader"
+              }
+            }
+          }
+        },
+        "mobile": {
+          "title": "Mobile Banner",
+          "type": "object",
+          "required": ["srcSet"],
+          "properties": {
+            "srcSet": {
+              "title": "Mobile Image",
+              "type": "string",
+              "widget": {
+                "ui:widget": "image-uploader"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "DynamicShelf",
+    "schema": {
+      "title": "Dynamic Shelf",
+      "description": "Change your dynamic shelf",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Shelf Title"
+        },
+        "searchParams": {
+          "type": "object",
+          "title": "Search parameters for Shelf",
+          "properties": {
+            "from": {
+              "type": "number",
+              "title": "from"
+            },
+            "to": {
+              "type": "number",
+              "title": "to"
+            },
+            "collection": {
+              "type": "string",
+              "title": "Collection"
+            },
+            "hideUnavailableItems": {
+              "default": true,
+              "type": "boolean",
+              "title": "Hide unavailable items"
+            },
+            "orderBy": {
+              "title": "Order By",
+              "description": "Default search ordering",
+              "type": "string",
+              "default": "",
+              "enum": [
+                "price:desc",
+                "price:asc",
+                "orders:desc",
+                "name:desc",
+                "name:asc",
+                "release:desc",
+                "discount:desc",
+                ""
+              ],
+              "enumNames": [
+                "Price: High to Low",
+                "Price: Low to High",
+                "Sales",
+                "Name, descending",
+                "Name, ascending",
+                "Release date",
+                "Discount",
+                "Default"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "InstitutionalHeader",
+    "schema": {
+      "title": "Institutional page header",
+      "description": "Define a title for your page",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Institutional page title"
+        }
+      }
+    }
+  },
+  {
+    "name": "InstitutionalTitleandSubtitle",
+    "schema": {
+      "title": "Institutional page Title and Subtitle",
+      "description": "Define a title and subtitle for your page",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Institutional page title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Institutional page subtitle"
+        }
+      }
+    }
+  },
+  {
+    "name": "ExpansibleText",
+    "schema": {
+      "title": "Expansible Text",
+      "description": "Define an expansible text area",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title Optional"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle Optional"
+        },
+        "text": {
+          "type": "string",
+          "title": "Main Text"
+        },
+        "texthidden": {
+          "type": "string",
+          "title": "Expansible Text"
+        }
+      }
+    }
+  },
+  {
+    "name": "FAQ",
+    "schema": {
+      "title": "FAQ",
+      "description": "Define an expansible FAQ area",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Component Title",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle",
+          "description": "Component Subtitle",
+          "type": "string"
+        },
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 14,
+          "items": {
+            "title": "Questions Area",
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "title": "FAQ Question"
+              },
+              "answer": {
+                "type": "string",
+                "title": "Expansible FAQ Answer Text",
+                "widget": {
+                  "ui:widget": "draftjs-rich-text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ExpansibleQuestions",
+    "schema": {
+      "title": "Expansible Questions",
+      "description": "Define an expansible FAQ area",
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "title": "Question"
+        },
+        "answer": {
+          "type": "string",
+          "title": "Expansible Answer Text",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ReadMore",
+    "schema": {
+      "title": "Read More",
+      "description": "text with read more button",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle h2 Optional"
+        },
+        "subtitleh3": {
+          "type": "string",
+          "title": "Subtitle h3 Optional"
+        },
+        "text": {
+          "type": "string",
+          "title": "Main Text",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        },
+        "buttonShow": {
+          "type": "string",
+          "title": "Button text to read more Optional"
+        },
+        "buttonHidden": {
+          "type": "string",
+          "title": "Button text to read less Optional"
+        }
+      }
+    }
+  },
+  {
+    "name": "CollectionCarousel",
+    "schema": {
+      "title": "Collection Carousel",
+      "description": "Defines a carousel based on a collection",
+      "type": "object",
+      "required": ["collectionId", "link"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Carousel title"
+        },
+        "collectionId": {
+          "type": "string",
+          "title": "Collection ID"
+        },
+        "buttonLabel": {
+          "title": "Button name",
+          "description": "Button name",
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "title": "Collection Link"
+        }
+      }
+    }
+  },
+  {
+    "name": "VideoCollection",
+    "schema": {
+      "title": "Collection Video",
+      "description": "Video Colleciton with description",
+      "type": "object",
+      "properties": {
+        "description": {
+          "title": "Category name",
+          "description": "Collection description",
+          "type": "string"
+        },
+        "src": {
+          "title": "Video Source URL",
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "title": "Video Configs",
+          "properties": {
+            "controlsOn": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Controls Settings"
+            },
+            "muteOn": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Mute Sound"
+            },
+            "playAuto": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Auto Play"
+            },
+            "loopingVideo": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Lopping Video"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "VideoFullScreen",
+    "schema": {
+      "title": "Video Full screen",
+      "description": "Video Colleciton with description",
+      "type": "object",
+      "required": ["sources"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "title": "Responsive video",
+            "type": "object",
+            "properties": {
+              "src": {
+                "title": "Video Source URL",
+                "type": "string"
+              },
+              "media": {
+                "title": "Device type",
+                "type": "string",
+                "description": "In which device the image will be shown",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "enum": ["(max-width: 48em)"],
+                    "title": "mobile"
+                  },
+                  {
+                    "type": "string",
+                    "enum": ["(min-width: 48em)"],
+                    "title": "desktop"
+                  }
+                ]
+              }
+            }
+          },
+          "required": ["media", "src"]
+        },
+        "settings": {
+          "type": "object",
+          "title": "Video Configs",
+          "properties": {
+            "controlsOn": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Controls Settings"
+            },
+            "muteOn": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Mute Sound"
+            },
+            "playAuto": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Auto Play"
+            },
+            "loopingVideo": {
+              "default": false,
+              "type": "boolean",
+              "title": "Active Lopping Video"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ThemeNavigation",
+    "schema": {
+      "title": "ThemeNavigation",
+      "description": "Navigate by Theme Suggestion Cards",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Component Title",
+          "description": "Component Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Component Description",
+          "description": "Component Description",
+          "type": "string"
+        },
+        "banners": {
+          "type": "array",
+          "maxItems": 6,
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "On click, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "label": {
+                "title": "Theme Label",
+                "description": "Theme Label",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt", "label"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "FullwidthStaticBanner",
+    "schema": {
+      "title": "Fullwidth Static Banner",
+      "description": "Fullwidth banner component with a single image",
+      "type": "object",
+      "required": ["alt"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "href": {
+          "title": "Link",
+          "description": "After clicking the image, the user will navigate to this link",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Alternative Description",
+          "description": "How users who cannot open the image read the link",
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "title": "Responsive image",
+            "type": "object",
+            "properties": {
+              "srcSet": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "media": {
+                "title": "Device type",
+                "type": "string",
+                "description": "In which device the image will be shown",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "enum": ["(max-width: 48em)"],
+                    "title": "mobile"
+                  },
+                  {
+                    "type": "string",
+                    "enum": ["(min-width: 48em)"],
+                    "title": "desktop"
+                  }
+                ]
+              }
+            },
+            "required": ["media", "srcSet"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "FullwidthNarrowBanner",
+    "schema": {
+      "title": "Fullwidth Narrow Banner",
+      "description": "Fullwidth narrow banner component with a single image",
+      "type": "object",
+      "required": ["sources", "alt"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "href": {
+          "title": "Link",
+          "description": "After clicking the image, the user will navigate to this link",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Alternative Description",
+          "description": "How users who cannot open the image read the link",
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "title": "Responsive image",
+            "type": "object",
+            "properties": {
+              "srcSet": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "media": {
+                "title": "Device type",
+                "type": "string",
+                "description": "In which device the image will be shown",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "enum": ["(max-width: 48em)"],
+                    "title": "mobile"
+                  },
+                  {
+                    "type": "string",
+                    "enum": ["(min-width: 48em)"],
+                    "title": "desktop"
+                  }
+                ]
+              }
+            }
+          },
+          "required": ["media", "srcSet"]
+        }
+      }
+    }
+  },
+  {
+    "name": "DoubleImageGallery",
+    "schema": {
+      "title": "Double Image Gallery",
+      "description": "DoubleImageGallery component",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "DoubleImageGallery": {
+          "type": "array",
+          "maxItems": 2,
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Alternative description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "TripleImageGallery",
+    "schema": {
+      "title": "Triple Image Gallery",
+      "description": "TripleImageGallery component",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "TripleImageGallery": {
+          "type": "array",
+          "maxItems": 3,
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Alternative description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "FiveImageGallery",
+    "schema": {
+      "title": "Five Image Gallery",
+      "description": "FiveImageGallery component",
+      "type": "object",
+      "required": [
+        "mainImageSrc",
+        "mainImageHref",
+        "mainImageAlt",
+        "mainImagePosition",
+        "secondaryImages"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "mainImageSrc": {
+          "title": "Desktop Main Image",
+          "type": "string",
+          "widget": {
+            "ui:widget": "image-uploader"
+          }
+        },
+        "mainImageHref": {
+          "title": "Desktop Main Image Link",
+          "description": "After clicking the main image, the user will navigate to this link",
+          "type": "string"
+        },
+        "mainImageAlt": {
+          "title": "Desktop Main Image Alternative Description",
+          "description": "How users who cannot open the main image read the link",
+          "type": "string"
+        },
+        "mainImagePosition": {
+          "title": "Desktop Main Image Position",
+          "type": "string",
+          "description": "Select the main image position",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["left"],
+              "title": "Left"
+            },
+            {
+              "type": "string",
+              "enum": ["right"],
+              "title": "Right"
+            }
+          ]
+        },
+        "secondaryImages": {
+          "type": "array",
+          "maxItems": 4,
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "title": "Desktop Secondary Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Alternative description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt"]
+          }
+        },
+        "sliderImagesMobile": {
+          "type": "array",
+          "maxItems": 5,
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "title": "Mobile Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Alternative description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            },
+            "required": ["src", "href", "alt"]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "FullwidthCarousel",
+    "schema": {
+      "title": "FullwidthCarousel",
+      "description": "A fullwidth carousel of images",
+      "type": "object",
+      "properties": {
+        "allItems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Images",
+            "type": "object",
+            "properties": {
+              "sources": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "title": "Responsive image",
+                  "type": "object",
+                  "properties": {
+                    "srcSet": {
+                      "title": "Image",
+                      "type": "string",
+                      "widget": {
+                        "ui:widget": "image-uploader"
+                      }
+                    },
+                    "media": {
+                      "title": "Device type",
+                      "type": "string",
+                      "description": "In which device the image will be shown",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": ["(max-width: 40em)"],
+                          "title": "mobile"
+                        },
+                        {
+                          "type": "string",
+                          "enum": ["(min-width: 40em)"],
+                          "title": "desktop"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": ["media"]
+              },
+              "href": {
+                "title": "Link",
+                "description": "After clicking the image, the user will navigate to this link",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Description",
+                "description": "How users who cannot open the image read the link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "SpaceBetweenSections",
+    "schema": {
+      "title": "Space Between Sections",
+      "description": "This component will add a space in pixels between sections",
+      "type": "object",
+      "properties": {
+        "heightMobile": {
+          "type": "string",
+          "title": "Space Component Height MOBILE (NUMBERS ONLY)",
+          "description": "Space component height specified in pixels (NUMBERS ONLY)"
+        },
+        "heightDesktop": {
+          "type": "string",
+          "title": "Space Component Height DESKTOP (NUMBERS ONLY)",
+          "description": "Space component height specified in pixels (NUMBERS ONLY)"
+        }
+      }
+    }
+  },
+  {
+    "name": "FormAllIn",
+    "schema": {
+      "title": "Form All In",
+      "description": "Form to capture leads",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title of the page",
+          "description": "",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle of the page",
+          "description": "",
+          "type": "string"
+        },
+        "nameList": {
+          "title": "Name list",
+          "description": "",
+          "type": "string"
+        },
+        "titleform": {
+          "title": "title of the form",
+          "description": "",
+          "type": "string"
+        },
+        "labelbutton": {
+          "title": "label button",
+          "description": "",
+          "type": "string"
+        },
+        "background": {
+          "type": "string",
+          "title": "Background Color",
+          "description": "Set hex color"
+        },
+        "textcolor": {
+          "type": "string",
+          "title": "Text Color",
+          "description": "Set hex color"
+        },
+        "backgroundbutton": {
+          "type": "string",
+          "title": "Background Color Button",
+          "description": "Set hex color"
+        }
+      }
+    }
+  },
+  {
+    "name": "TopBar",
+    "schema": {
+      "title": "TopBar component",
+      "type": "object",
+      "description": "TopBar component",
+      "properties": {
+        "allItems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "TopBar Item",
+            "type": "object",
+            "required": ["label"],
+            "properties": {
+              "label": {
+                "title": "Label",
+                "type": "string"
+              },
+              "link": {
+                "title": "Link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "CollectionCarouselWithDescription",
+    "schema": {
+      "title": "Collection Carousel With Description",
+      "description": "Defines a carousel based on a collection with a description text",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "title": {
+          "type": "string",
+          "title": "Carousel title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Carousel subtitle"
+        },
+        "description": {
+          "type": "string",
+          "title": "Carousel description"
+        },
+        "collectionId": {
+          "type": "string",
+          "title": "Collection ID"
+        },
+        "buttonLabel": {
+          "type": "string",
+          "title": "Carousel Button Text"
+        },
+        "buttonLink": {
+          "type": "string",
+          "title": "Carousel Button Link"
+        }
+      }
+    }
+  },
+  {
+    "name": "ThreeCards",
+    "schema": {
+      "title": "Three Cards Component",
+      "description": "Component example using wedding cards",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "ID block",
+          "description": "Set ID block to anchor the page"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Component Title",
+          "type": "string"
+        },
+        "subtitle": {
+          "title": "Subtitle",
+          "description": "Component Subtitle",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "Component Description",
+          "type": "string"
+        },
+        "cards": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "title": "Cards items",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": "Image",
+                "description": "Card Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "titleImage": {
+                "title": "Title",
+                "description": "Title on card image",
+                "type": "string"
+              },
+              "descriptionImage": {
+                "title": "Description",
+                "description": "Description on card image",
+                "type": "string"
+              },
+              "link": {
+                "title": "Link",
+                "description": "card url",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "GridCollection",
+    "schema": {
+      "title": "GridCollection",
+      "description": "A grid component for Vivara and Life collections",
+      "type": "object",
+      "properties": {
+        "banners": {
+          "type": "array",
+          "maxItems": 68,
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "title": "Image",
+            "properties": {
+              "src": {
+                "title": "Image",
+                "description": "Image",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "href": {
+                "title": "URL address",
+                "description": "",
+                "type": "string"
+              },
+              "alt": {
+                "title": "Image description",
+                "description": "Image description for accessibility",
+                "type": "string"
+              },
+              "label": {
+                "title": "Category name",
+                "description": "Category name",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "IframeReader",
+    "schema": {
+      "title": "Iframe Reader",
+      "description": "Read the Iframe and inject it into the page",
+      "type": "object",
+      "properties": {
+        "iframe": {
+          "title": "Iframe",
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "CategoriesMenu",
+    "schema": {
+      "title": "Categories Menu",
+      "type": "object",
+      "description": "Categories Menu",
+      "properties": {
+        "MenuDesktopVivara": {
+          "title": "Menu desktop Vivara",
+          "type": "string"
+        },
+        "MenuMobileVivara": {
+          "title": "Menu mobile Vivara",
+          "type": "string"
+        },
+        "MenuDesktopLife": {
+          "title": "Menu desktop Life",
+          "type": "string"
+        },
+        "MenuMobileLife": {
+          "title": "Menu mobile Life",
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "KitsCarousel",
+    "schema": {
+      "title": "Kits Carousel",
+      "description": "An array of product combinations to be displayed as kits in a slider",
+      "type": "object",
+      "properties": {
+        "buttonLabel": {
+          "title": "Button text",
+          "description": "Button text",
+          "type": "string"
+        },
+        "productKits": {
+          "type": "array",
+          "maxItems": 30,
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "title": "Kit",
+            "properties": {
+              "mainProductSku": {
+                "title": "Main Product SKU",
+                "description": "SKU of the first product",
+                "type": "string"
+              },
+              "secondaryProductSku": {
+                "title": "Secondary Product SKU",
+                "description": "SKU of the second product",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

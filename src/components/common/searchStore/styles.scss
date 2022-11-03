@@ -1,0 +1,234 @@
+.container,
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 25px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+
+  .title {
+    display: flex;
+    align-items: center;
+    max-width: 326px;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.2em;
+    text-align: center;
+  }
+
+  .containerSelect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    .text {
+      margin: 8px 0 4px;
+
+      span {
+        color: #f08769;
+      }
+    }
+
+    .select {
+      position: relative;
+      width: 100%;
+      border-radius: 0;
+
+      &::after {
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        width: 20px;
+        height: 10px;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6667 1.33334L7.99848 8.00154L1.33334 1.33334' stroke='%23F08769' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        content: "";
+      }
+
+      select {
+        width: 100%;
+        padding: 14px 0 14px 16px;
+        color: #585858;
+        font-size: 16px;
+        background: #fff;
+        border: 1px solid #585858;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all 150ms ease;
+        appearance: none;
+
+        &.borderRed {
+          border: 1px solid #ff0000;
+        }
+
+        &:required:invalid {
+          color: #585858;
+        }
+
+        option[value=""][disabled] {
+          display: none;
+        }
+
+        &:focus {
+          border-color: #f08769;
+          outline: none;
+          box-shadow: 0 0 0 2px rgb(0 119 255 / 20%);
+        }
+      }
+    }
+  }
+
+  .buttonContainer {
+    width: 100%;
+
+    .button {
+      &.btnDisabled {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 18px;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #ffa687;
+    border: none;
+    cursor: pointer;
+  }
+
+  .result {
+    display: flex;
+    width: 100%;
+    margin: 24px 0;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+  }
+
+  .containerResult {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 560px;
+    overflow-y: auto;
+    color: #585858;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 624px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d2d2d2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #7a7a7a;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .storeList {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .store {
+        margin-bottom: 4px;
+        color: #000000;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .address {
+        margin-bottom: 10px;
+      }
+
+      .contact {
+        margin-bottom: 18px;
+
+        .iconPhone {
+          position: relative;
+          top: 4px;
+        }
+      }
+
+      .obs {
+        margin-bottom: 24px;
+        color: #000000;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.containerFooter {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 440px;
+    margin-top: 5px;
+    padding: 0 50px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+  }
+
+  .containerFooter {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "select select"
+      ". button";
+    grid-template-columns: 250px;
+    justify-content: right;
+    margin-top: 0;
+    margin-right: 1.75rem;
+    column-gap: 8px;
+
+    .title {
+      grid-area: title;
+      width: 500px;
+      max-width: unset;
+      margin-bottom: 1rem;
+      padding: 0;
+      font-weight: 700;
+      font-size: 24px;
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: 0.1em;
+    }
+
+    .containerSelect {
+      grid-row: 2;
+    }
+
+    .buttonContainer {
+      grid-area: button;
+
+      .button {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-left: 15%;
+  }
+}

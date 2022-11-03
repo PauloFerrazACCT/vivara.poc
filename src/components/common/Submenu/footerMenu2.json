@@ -1,0 +1,9 @@
+{
+  "label": "Atendimento",
+  "items": [
+    {
+      "label": "Meus pedidos",
+      "link": "https://secure.vivara.com.br/account#/orders"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+@import "../Button/buttons";
+
+.button[data-store-buy-button] {
+  color: var(--color-text-inverse);
+  font-weight: normal;
+  font-size: var(--text-size-0);
+  font-family: var(--sans-serif);
+  letter-spacing: 1px;
+  background-color: var(--bg-primary-default);
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: var(#212429);
+  }
+
+  &:disabled {
+    background-color: #212429;
+    opacity: 0.3;
+  }
+}

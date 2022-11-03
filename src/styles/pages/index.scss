@@ -1,0 +1,37 @@
+.cms-home-components {
+  .navigation-category-container {
+    margin-top: 40px;
+  }
+
+  .home-navigationcollection-description {
+    margin-top: 0;
+  }
+
+  .stylegirls-container {
+    max-width: unset;
+    margin: 0 auto;
+    background-color: #ebebeb;
+
+    @media screen and (min-width: 1024px) {
+      padding: 40px 0 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      .slick-track {
+        width: 1242px !important; /* stylelint-disable-line declaration-no-important */
+      }
+    }
+  }
+}
+
+.activate-chatbot-btn
+{
+  width: 80px !important;
+  height: 80px !important;
+
+  @media (min-width: 1024px)
+  {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

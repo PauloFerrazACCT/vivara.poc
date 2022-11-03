@@ -1,0 +1,23 @@
+.fullwidthBanner-container {
+  max-width: 1920px;
+
+  [data-gatsby-image-wrapper] {
+    > div {
+      padding-top: 0% !important; /* stylelint-disable-line declaration-no-important */
+    }
+
+    img {
+      position: static;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      min-width: fit-content;
+      max-width: none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

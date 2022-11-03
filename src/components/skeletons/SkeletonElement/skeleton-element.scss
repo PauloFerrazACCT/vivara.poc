@@ -1,0 +1,40 @@
+[data-store-skeleton-element] {
+  &[data-shimmer="true"] {
+    position: relative;
+    display: none;
+    overflow: hidden;
+  }
+
+  &:first-child() {
+    display: none;
+  }
+
+  [data-skeleton-element-content] {
+    overflow: hidden;
+    background: #e6e6e6;
+    border-radius: var(--border-radius-default);
+
+    &[data-element-variant="text"] {
+      width: 100%;
+      height: var(--space-4);
+    }
+
+    &[data-element-variant="button"] {
+      width: var(--space-13);
+      min-height: var(--space-5);
+      column-gap: var(--space-2);
+      border-radius: 0;
+    }
+
+    &[data-element-variant="image"] {
+      border-radius: var(--border-radius-default);
+    }
+
+    &[data-element-variant="badge"] {
+      justify-content: center;
+      width: 60%;
+      height: var(--space-5);
+      border-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,847 @@
+{
+  "items": [
+    {
+      "label": "Joias",
+      "link": "/vivara/joias",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Categorias",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Anéis",
+              "link": "/vivara/joias/aneis/outros-aneis",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Alianças",
+              "link": "/vivara/joias/aneis/aliancas",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Brincos",
+              "link": "/vivara/joias/brincos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Colares",
+              "link": "/vivara/joias/colares",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Correntes",
+              "link": "/vivara/joias/correntes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pingentes",
+              "link": "/vivara/joias/pingentes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras",
+              "link": "/vivara/joias/pulseiras",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos",
+              "link": "/vivara/joias",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Coleções",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Vivara",
+              "link": "/colecao/vivara",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Icona",
+              "link": "/colecao/icona",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Bold",
+              "link": "/colecao/bold-collection",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Elos",
+              "link": "/colecao/elos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Lumiere",
+              "link": "/colecao/lumiere",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Essenza",
+              "link": "/colecao/essenza",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todas",
+              "link": "/colecoes-vivara",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Seleção Especial",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/vivara/joias/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Presente ideal",
+              "link": "/especial/presentes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Clássicos Vivara",
+              "link": "/vivara/classicos-vivara",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Especiais",
+              "link": "/especiais",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Religiosos",
+              "link": "/vivara/joias/pingentes/protecao-e-fe",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Infantis",
+              "link": "/vivara/joias/infantil",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Conjuntos",
+              "link": "/conjuntos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Personalizáveis",
+              "link": "/vivara/joias/personalizaveis",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Joias em Sale",
+              "link": "/sale/vivara/joias",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Material",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Ouro Amarelo",
+              "link": "/vivara/joias/material/ouro-amarelo",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss1.png",
+              "submenu": null
+            },
+            {
+              "label": "Ouro Branco",
+              "link": "/vivara/joias/material/ouro-branco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss2.png",
+              "submenu": null
+            },
+            {
+              "label": "Ouro Rosé",
+              "link": "/vivara/joias/material/ouro-rose",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            },
+            {
+              "label": "Ouro Vivara",
+              "link": "/vivara/joias/material/ouro-vivara",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss3.png",
+              "submenu": null
+            },
+            {
+              "label": "Prata",
+              "link": "/vivara/joias/material/prata",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss4.png",
+              "submenu": null
+            },
+            {
+              "label": "Aço",
+              "link": "/vivara/joias/material/aco",
+              "image": "https://static.vivara.com.br/static/layout-4.0/img/ss5.png",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Categoria",
+          "link": "/vivara/joias",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Casamento",
+      "link": "/casamento",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Alianças",
+          "link": "/vivara/joias/aneis/aliancas",
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Alianças de Ouro",
+              "link": "/vivara/joias/aneis/aliancas/material/ouro-amarelo",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Alianças com Diamante",
+              "link": "/casamento/aliancas-com-diamante",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Alianças de Prata",
+              "link": "/vivara/aliancas-prata",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todas",
+              "link": "/vivara/joias/aneis/aliancas",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Anéis de noivado",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Anéis solitários",
+              "link": "/vivara/joias/aneis/aneis-solitarios",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Meia aliança de diamante",
+              "link": "/vivara/joias/aneis/meia-aliancas",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Aliança inteira de diamante",
+              "link": "/casamento/aliancas-inteiras-de-diamante",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Outros anéis",
+              "link": "/vivara/joias/aneis",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "O grande dia",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Tiaras e pentes",
+              "link": "/vivara/joias/tiaras-e-pentes/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Terços e escapulários",
+              "link": "/vivara/joias/tercos-e-escapularios/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Parceria Casar.com",
+              "link": "/regras/vivara-casar",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Joias para a noiva",
+              "link": "/casamento/joias-para-noiva",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver categorias",
+              "link": null,
+              "image": null,
+              "firstLayer": false,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Categoria",
+          "link": "/casamento",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Relógios",
+      "link": "/categoria/relogios",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/vivara/relogios/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Smartwatches",
+              "link": "/vivara/relogios/smartwatch",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras Apple Watch",
+              "link": "/vivara/acessorios/pulseiras-smart-watch",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/sale/relogios",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos",
+              "link": "/vivara/relogios",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Marcas",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Akium",
+              "link": "/vivara/relogios/akium",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Baume & Mercier",
+              "link": "/vivara/relogios/baume-&-mercier",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Bulova",
+              "link": "/vivara/relogios/bulova",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Calvin Klein",
+              "link": "/vivara/relogios/calvin-klein",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Coach",
+              "link": "/vivara/relogios/coach",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Festina",
+              "link": "/vivara/relogios/festina",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Guess",
+              "link": "/vivara/relogios/guess",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Hugo Boss",
+              "link": "/vivara/relogios/hugo-boss",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Lacoste",
+              "link": "/vivara/relogios/lacoste",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Montblanc",
+              "link": "/vivara/relogios/montblanc",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Movado",
+              "link": "/vivara/relogios/movado",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "MVMT",
+              "link": "/vivara/relogios/mvmt",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Nautica",
+              "link": "/vivara/relogios/nautica",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Olivia Burton",
+              "link": "/vivara/relogios/olivia-burton",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Scuderia Ferrari",
+              "link": "/vivara/relogios/scuderia-ferrari",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "TAG Heuer",
+              "link": "/vivara/relogios/tag-heuer",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Tommy Hilfiger",
+              "link": "/vivara/relogios/tommy-hilfiger",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Tommy Jeans",
+              "link": "/vivara/relogios/tommy-jeans",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Victorinox",
+              "link": "/vivara/relogios/victorinox",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Vivara",
+              "link": "/vivara/relogios/vivara",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos",
+              "link": "/vivara/relogios",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Categoria",
+          "link": "/vivara/relogios",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Acessórios",
+      "link": "/vivara/acessorios",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/vivara/acessorios/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/sale/acessorios",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos",
+              "link": "/vivara/acessorios",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Categorias",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Abotoaduras",
+              "link": "/vivara/acessorios/abotoaduras",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Canetas",
+              "link": "/vivara/acessorios/canetas",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Cintos",
+              "link": "/vivara/acessorios/cintos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Óculos de sol",
+              "link": "/vivara/acessorios/oculos-de-sol",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Porta-joias",
+              "link": "/vivara/acessorios/porta-joias",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Porta-relógios",
+              "link": "/vivara/acessorios/porta-relogios",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Conjuntos",
+              "link": "/acessorios/conjuntos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Cadernos",
+              "link": "/vivara/acessorios/cadernos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Carteiras",
+              "link": "/vivara/acessorios/carteiras-e-porta-cartoes/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Bolsas e mochilas",
+              "link": "/vivara/acessorios/bolsas-e-mochilas",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Perfumes",
+              "link": "/vivara/acessorios/perfumes/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Porta-passaporte",
+              "link": "/vivara/acessorios/porta-passaportes/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras",
+              "link": "/vivara/acessorios/pulseiras/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Canivetes",
+              "link": "/vivara/acessorios/canivetes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras para Relógio",
+              "link": "/vivara/acessorios/pulseiras-smart-watch",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Marcas",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Vivara",
+              "link": "/vivara/acessorios/vivara",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Life by Vivara",
+              "link": "/life/acessorios/",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Festina",
+              "link": "/vivara/acessorios/festina",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Hugo Boss",
+              "link": "/vivara/acessorios/hugo-boss",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Lacoste",
+              "link": "/vivara/acessorios/pulseiras-smart-watch",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Montblanc",
+              "link": "/vivara/acessorios/montblanc",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Tommy Hilfiger",
+              "link": "/vivara/acessorios/tommy-hilfiger",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Victorinox",
+              "link": "/vivara/acessorios/victorinox",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Categoria",
+          "link": "/vivara/acessorios",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "Masculino",
+      "link": "/para-eles",
+      "image": null,
+      "firstLayer": true,
+      "submenu": [
+        {
+          "label": "Destaques",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Lançamentos",
+              "link": "/para-eles/lancamentos",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Sale",
+              "link": "/para-eles/sale",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Ver todos",
+              "link": "/para-eles",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Categorias",
+          "link": null,
+          "image": null,
+          "firstLayer": false,
+          "submenu": [
+            {
+              "label": "Anéis",
+              "link": "/para-eles/joias/aneis",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pingentes",
+              "link": "/para-eles/joias/pingentes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Relógios",
+              "link": "/para-eles/relogios",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Perfumes",
+              "link": "/para-eles/acessorios/perfumes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Carteiras",
+              "link": "/para-eles/acessorios/carteiras",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Correntes",
+              "link": "/para-eles/joias/correntes",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Pulseiras",
+              "link": "/para-eles/joias/pulseiras",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Óculos-de-sol",
+              "link": "/para-eles/acessorios/oculos-de-sol",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Canetas",
+              "link": "/para-eles/acessorios/canetas",
+              "image": null,
+              "submenu": null
+            },
+            {
+              "label": "Acessórios",
+              "link": "/para-eles/acessorios",
+              "image": null,
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "label": "Ver Categoria",
+          "link": "https://www.vivara.com.br/para-eles",
+          "image": null,
+          "firstLayer": false,
+          "submenu": null
+        }
+      ]
+    },
+    {
+      "label": "60 Anos",
+      "link": "/especial/vivara-60-anos",
+      "image": null,
+      "firstLayer": true,
+      "submenu": null
+    }
+  ]
+}

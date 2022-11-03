@@ -1,0 +1,15 @@
+.main-container {
+  padding-top: 138px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    padding-top: 160px;
+  }
+}
+
+.layout-header-wrapper {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+}

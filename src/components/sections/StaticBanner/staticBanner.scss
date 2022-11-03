@@ -1,0 +1,91 @@
+.section__container-staticbanner {
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 512px;
+  }
+}
+
+.staticBanner-container {
+  [data-gatsby-image-wrapper] {
+    max-width: 768px;
+    height: 375px;
+    max-height: 820px;
+    margin: auto;
+
+    @media screen and (min-width: 400px) {
+      height: 445px;
+    }
+
+    @media screen and (min-width: 425px) {
+      height: 474px;
+    }
+
+    @media screen and (min-width: 640px) {
+      max-width: 1280px;
+      max-height: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+      max-height: 336px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-height: 448px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-height: 512px;
+    }
+  }
+
+  img {
+    width: fit-content;
+  }
+}
+
+.homeBanner-container {
+  [data-gatsby-image-wrapper] {
+    height: 358px;
+
+    @media screen and (min-width: 350px) {
+      height: 390px;
+    }
+
+    @media screen and (min-width: 375px) {
+      height: 417px;
+    }
+
+    @media screen and (min-width: 400px) {
+      height: 445px;
+    }
+
+    @media screen and (min-width: 425px) {
+      height: 474px;
+    }
+
+    @media screen and (min-width: 640px) {
+      height: 265px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 316px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 420px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      height: 522px;
+    }
+
+    @media screen and (min-width: 1330px) {
+      height: 550px;
+    }
+  }
+}

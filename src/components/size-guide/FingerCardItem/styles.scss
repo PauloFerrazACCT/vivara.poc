@@ -1,0 +1,62 @@
+.finger-card__phalange-list {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sans-serif);
+
+  .finger-card__phalange-item + .finger-card__phalange-item {
+    margin-top: 16px;
+  }
+}
+
+.finger-card__phalange-item {
+  display: flex;
+  align-items: center;
+  color: #737373;
+  font-size: 0.875rem;
+  font-family: var(--sans-serif);
+  line-height: 1.25rem;
+
+  > :is(p, button) + :is(p, button) {
+    margin-left: 4px;
+  }
+}
+
+.slick-slide .finger-card__new-measure {
+  display: flex;
+  align-items: center;
+
+  img {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.25rem;
+    background-color: #f08769;
+    border-width: 1px;
+    border-radius: 9999px;
+  }
+}
+
+.finger-card__phalange-title {
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.finger-card__phalange-measure {
+  padding: 5px;
+  color: #272727;
+  font-weight: bold;
+
+  @media (min-width: 640px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.finger-card__action {
+  padding: 5px;
+}
+
+.finger-card__action img {
+  width: 14px;
+  height: 14px;
+}

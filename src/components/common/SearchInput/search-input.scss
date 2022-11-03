@@ -1,0 +1,92 @@
+@import "src/styles/scaffold";
+
+[data-store-search-input] {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 640px;
+  height: var(--tap-min-size);
+  background: #fff;
+
+  @include media(">=notebook") { height: 3rem; margin-bottom: 5px; }
+
+  [data-store-input] {
+    width: 90%;
+    height: 2.5rem;
+    margin: 0 1.25rem;
+    color: #7a7a7a;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+
+    @include media(">=tablet") {
+      width: 95%;
+      background-color: #f0f0f0;
+    }
+
+    @include media(">=notebook") {
+      width: 100%;
+      max-width: 640px;
+      height: 36px;
+      margin-top: 2px;
+      padding: 11px;
+      font-size: 16px;
+      background-color: #f0f0f0;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-right: 55px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  }
+
+  [data-store-icon] {
+    display: block;
+    cursor: pointer;
+  }
+
+  [data-store-button] {
+    position: absolute;
+    width: var(--space-7);
+    height: 40px;
+    margin-left: 49%;
+    padding: 0;
+    padding-right: 3%;
+    background-color: transparent;
+    border: 0;
+
+    @media (min-width: 768px) {
+      @media (max-width: 1024px) {
+        margin-left: 90%;
+      }
+    }
+
+    @include media(">=notebook") {
+      left: calc(100% - 3.5rem);
+      height: var(--space-6);
+      min-height: var(--space-6);
+      margin-left: unset;
+    }
+
+    @media (max-width: 768px) {
+      right: 2.5rem;
+      margin: unset;
+    }
+  }
+
+  [data-store-button] svg {
+    width: var(--space-4);
+    height: var(--space-4);
+    margin-top: 5px;
+    color: var(--color-neutral-7);
+  }
+}
+
+[data-store-icon-button]:hover {
+  background-color: transparent;
+  cursor: pointer;
+}

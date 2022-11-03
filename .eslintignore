@@ -1,0 +1,12 @@
+package.json
+node_modules/
+public/
+coverage/
+.vscode/
+.cache/
+@generated
+src/typings/
+gatsby-node.ts
+redirects.json.ts
+sentry.config.js
+static/files/insider-sw-sdk.js

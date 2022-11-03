@@ -1,0 +1,44 @@
+@import "src/styles/scaffold";
+
+.institutional-container {
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px 0;
+  background: #f4f4f4;
+
+  @include media(">=tablet") {
+    height: 122px;
+  }
+}
+
+.institutional-page-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include media(">=notebook") {
+    font-size: 32px;
+  }
+}
+
+.institutional-page-subtitle {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #000;
+  font-weight: 300;
+  font-size: 11px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+
+  @include media(">=notebook") {
+    font-size: 14px;
+  }
+}

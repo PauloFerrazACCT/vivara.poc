@@ -1,0 +1,34 @@
+[data-custom-button] {
+  width: 100%;
+  max-width: 310px;
+  padding: 14px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-family: var(--sans-serif);
+  line-height: 1rem;
+  text-transform: uppercase;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+[data-custom-button]:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+[data-custom-button-variant="normal"] {
+  color: black;
+  background-color: #f08769;
+}
+
+[data-custom-button-variant="dark"] {
+  color: white;
+  background-color: black;
+}
+
+[data-custom-button-variant="outlined"] {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}

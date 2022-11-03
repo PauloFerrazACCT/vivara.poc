@@ -1,0 +1,43 @@
+.single-input-modal {
+  &__title {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: var(--serif);
+    line-height: 1.75rem;
+    text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    color: #272727 !important; /* stylelint-disable-line declaration-no-important */
+    font-size: 0.875rem;
+    font-family: var(--sans-serif);
+    line-height: 1.25rem;
+    background: #fff !important; /* stylelint-disable-line declaration-no-important */
+    border: 1px solid #737373;
+    outline: none;
+
+    &:active, &:hover, &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__notification {
+    margin-top: 10px;
+    color: #bf1c1d;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 17px;
+  }
+
+  &__btn {
+    margin-top: 16px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+.confirmation-modal {
+  &__header {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-family: var(--serif);
+    line-height: 1.75rem;
+    text-align: center;
+  }
+
+  &__body {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #272727;
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: var(--sans-serif);
+    line-height: 1.25rem;
+    text-align: center;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-direction: column;
+
+    > button + button {
+      margin-top: 16px;
+    }
+  }
+}

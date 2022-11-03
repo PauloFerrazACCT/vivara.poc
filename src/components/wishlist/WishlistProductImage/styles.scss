@@ -1,0 +1,35 @@
+.wishlist-product__image-container {
+  grid-row: 2 / span 1;
+  width: 65px;
+  height: 65px;
+
+  &:first-child {
+    display: block;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+}
+
+.wishlist-product__image {
+  width: inherit;
+  height: inherit;
+}
+
+.wishlist-card__imgs-fallback {
+  grid-row: 2 / span 1;
+  width: 65px;
+  height: 65px;
+  background: #f0f0f0;
+
+  &:first-child {
+    display: block;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+}

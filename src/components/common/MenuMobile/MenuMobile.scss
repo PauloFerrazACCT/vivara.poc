@@ -1,0 +1,293 @@
+.menu-mobile-container {
+  position: fixed;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
+  background: #fff;
+
+  .menu-mobile-logo-life {
+    display: flex;
+    justify-content: center;
+  }
+
+  [data-life-logo] {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.btn-close-drawer-menu {
+  position: absolute;
+  top: 30px;
+  right: 6px;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  color: #737373;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+
+  &:active,
+  &:hover,
+  &:focus-visible {
+    background-color: transparent !important; /* stylelint-disable-line declaration-no-important */
+    border: none;
+    box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+  }
+
+  [data-close-icon] {
+    width: 16px;
+    height: 16px;
+
+    path {
+      stroke: #737373;
+    }
+  }
+}
+
+.menu-mobile-login {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 26px 22px 0;
+  padding-bottom: 20px;
+  color: #585858;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+
+  img {
+    padding-right: 12px;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  [data-login-text] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.menu-mobile-store {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 22px;
+  padding-top: 20px;
+  color: #585858;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
+  border-top: 1px solid #f0f0f0;
+
+  img {
+    padding-right: 12px;
+  }
+}
+
+.btn-drawer-menu {
+  background-color: transparent;
+  border: none;
+
+  &:active,
+  &:hover,
+  &:focus-visible {
+    background-color: transparent !important; /* stylelint-disable-line declaration-no-important */
+    border: none;
+    box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+  }
+}
+
+.menu-mobile-departament-container {
+  .accordion[data-store-accordion] [data-accordion-item] {
+    border: none;
+  }
+
+  .accordion[data-store-accordion] [data-store-button].title-subsection__first-layer-vivara {
+    padding: 20px 22px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+
+  .accordion[data-store-accordion] [data-store-button].title-subsection__second-layer-vivara {
+    padding: 20px 22px;
+    color: #272727;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+
+  .divider-second-layer {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .menu-item-link__vivara {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 20px 22px;
+    color: #585858;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 14px;
+    text-decoration: none;
+
+    &:visited {
+      color: #585858;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .menu-arrow__second-layer path {
+    stroke: #000;
+  }
+
+  .firstLayer-menu-item-link__vivara {
+    padding: 20px 22px;
+    color: #000 !important; /* stylelint-disable-line declaration-no-important */
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+
+  // LIFE MENU STYLE
+
+  .firstLayer-menu-item-link__life {
+    padding: 20px 22px;
+    color: #272727 !important; /* stylelint-disable-line declaration-no-important */
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+
+  .menu-item-link__life {
+    display: flex;
+    align-items: center;
+    padding: 20px 22px;
+    color: #272727;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    &:visited {
+      color: #585858;
+    }
+
+    img,
+    svg {
+      margin-right: 10px;
+    }
+
+    img {
+      width: 31px;
+      height: 30px;
+    }
+  }
+
+  .accordion[data-store-accordion] [data-store-button].title-subsection__first-layer-life {
+    padding: 20px 22px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+
+  .accordion[data-store-accordion] [data-store-button].title-subsection__second-layer-life {
+    padding: 20px 22px;
+    color: #272727;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+}
+
+.btn-close-drawer-menu-life {
+  position: absolute;
+  top: 42px;
+  right: 6px;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  color: #737373;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+
+  &:active,
+  &:hover,
+  &:focus-visible {
+    background-color: transparent !important; /* stylelint-disable-line declaration-no-important */
+    border: none;
+    box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+  }
+
+  [data-close-icon] {
+    width: 16px;
+    height: 16px;
+
+    path {
+      stroke: #737373;
+    }
+  }
+}

@@ -1,0 +1,521 @@
+.grid-collection-container {
+  width: 100%;
+  max-width: 965px;
+  margin: auto;
+  margin-top: 37px;
+
+  @media (min-width: 768px) {
+    margin-top: 12px;
+  }
+}
+
+.grid-collection-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-collection-title {
+  margin: 8px auto 0;
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 428px) {
+  .grid-collection-title {
+    margin: 8px auto 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.grid-collection-subtitle {
+  width: 326px;
+  margin: 8px auto;
+  color: #737373;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 13.27px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid-collection-description-border {
+  width: 80px;
+  border-bottom: 1px solid #000;
+}
+
+.grid-collection-items {
+  display: contents;
+  margin: 16px 0;
+  padding: 0 30px;
+}
+
+.grid-collection-images {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 23px;
+  justify-content: center;
+  margin-top: 24px;
+
+  [data-gatsby-image-wrapper],
+  img {
+    min-width: 144px;
+    min-height: 144px;
+  }
+}
+
+@media (max-width: 360px) {
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 4px;
+    justify-content: center;
+    margin-top: 24px;
+
+    [data-gatsby-image-wrapper],
+    img {
+      min-width: 170px;
+      min-height: 170px;
+    }
+  }
+}
+
+@media (min-width: 361px) and (max-width: 375px) {
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+
+    [data-gatsby-image-wrapper],
+    img {
+      min-width: 170px;
+      min-height: 170px;
+    }
+  }
+}
+
+@media (min-width: 376px) and (max-width: 428px) {
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+
+    [data-gatsby-image-wrapper],
+    img {
+      min-width: 170px;
+      min-height: 170px;
+    }
+  }
+}
+
+.grid-collection-link-area {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-collection-link-area [data-gatsby-image-wrapper] {
+  max-width: 170px;
+  border: 1px solid #d2d2d2;
+}
+
+.grid-collection-link-area:hover [data-gatsby-image-wrapper] {
+  border-color: #f08769;
+}
+
+.grid-collection-link-area h3 {
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 10%;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.grid-collection-link-area:hover h3 {
+  color: #f08769;
+}
+
+@media screen and (min-width: 607px) {
+  .grid-collection-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 0 30px;
+  }
+
+  .grid-collection-link-area [data-gatsby-image-wrapper] {
+    max-width: 190px;
+  }
+
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 23px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+    [data-gatsby-image-wrapper],
+    img {
+      width: 190px;
+      height: 190px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-collection-container {
+    position: relative;
+  }
+
+  .grid-collection-title {
+    margin-bottom: 8px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .grid-collection-subtitle {
+    width: 487px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 15.48px;
+  }
+
+  .grid-collection-description-border {
+    margin-top: 8px;
+  }
+
+  .grid-collection-items {
+    width: 100%;
+    height: auto;
+    margin: 25px auto auto;
+  }
+
+  .grid-collection-link-area {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+
+    [data-gatsby-image-wrapper],
+    img {
+      width: 150px;
+      min-width: 150px;
+      height: 150px;
+      min-height: 150px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .grid-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 23px;
+    margin-bottom: 64px;
+
+    [data-gatsby-image-wrapper],
+    img {
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+      min-height: 200px;
+    }
+  }
+}
+
+/* Section at Home area */
+.section__container-gridcollection {
+  .home-gridcollection {
+    @media (min-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1024px) {
+      .home-gridcollection {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .home-gridcollection-title {
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .home-gridcollection-items {
+      margin: 20px auto 0;
+    }
+
+    .home-gridcollection-images {
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+  }
+}
+
+/* Section at Home area - End */
+.grid-collection-search-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: auto;
+  margin-top: 56px;
+
+  @media (min-width: 768px) {
+    margin-top: 64px;
+  }
+}
+
+.grid-collection-search-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-collection-search-title {
+  max-width: 330px;
+  margin: 8px auto;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.grid-collection-search-subtitle {
+  display: none;
+}
+
+.grid-collection-search-description-border {
+  width: 80px;
+  margin-top: 8px;
+  border-bottom: 1px solid #000;
+}
+
+.grid-collection-search-items {
+  margin-top: 10%;
+  padding: 0 30px;
+}
+
+.grid-collection-search-images {
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.grid-collection-search-link-area {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-collection-search-link-area [data-gatsby-image-wrapper] {
+  max-width: 170px;
+  border: 1px solid #d2d2d2;
+}
+
+.grid-collection-search-link-area:hover [data-gatsby-image-wrapper] {
+  border-color: #f08769;
+}
+
+.grid-collection-search-link-area h3 {
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: 10%;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.grid-collection-search-link-area:hover h3 {
+  color: #f08769;
+}
+
+@media screen and (min-width: 607px) {
+  .grid-collection-search-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 0 30px;
+  }
+
+  .grid-collection-search-link-area [data-gatsby-image-wrapper] {
+    max-width: 190px;
+  }
+
+  .grid-collection-search-images {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-collection-search-container {
+    margin-top: 56px;
+  }
+
+  .grid-collection-search-title {
+    max-width: 560px;
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+
+  .grid-collection-search-items {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+  }
+
+  .grid-collection-search-link-area {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid-collection-search-images {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+// Home Life Styles
+
+.grid-collection-title.life {
+  top: 0;
+  color: #000000;
+  font-weight: 300;
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  line-height: 48px;
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+  .grid-collection-title.life {
+    top: 569px;
+    left: 41.5px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 428px) {
+  .grid-collection-title.life {
+    top: 569px;
+    left: 41.5px;
+    color: #000000;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+
+.grid-collection-description-border.life {
+  border-bottom: 2px solid #ffa67d;
+}
+
+.grid-collection-link-area.life h3 {
+  margin-top: 18px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+
+  @media (max-width: 768px) {
+    top: 145px;
+    left: 0;
+    width: 170px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  @media (max-width: 360px) {
+    top: 145px;
+    left: 0;
+    width: 170px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+
+.grid-collection-link-area.life [data-gatsby-image-wrapper] {
+  border: 2px solid #c4c4c4;
+}
+
+.grid-collection-link-area.life:hover [data-gatsby-image-wrapper] {
+  border-color: #f08769;
+}
+
+// Home Life Styles - End

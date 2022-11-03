@@ -1,0 +1,77 @@
+.wishlist-menu__container {
+  margin-left: 0;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 100px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-left: 210px;
+  }
+}
+
+.wishlist-menu__greeting-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.wishlist-menu__greeting {
+  margin-left: 20px;
+  color: #272727;
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-family: Roboto, sans-serif;
+  line-height: 24px;
+}
+
+.wishlist-menu__link-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 175px;
+}
+
+.wishlist-menu__link {
+  margin: 0;
+  padding: 20px 0;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+  text-align: left;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0.25rem;
+  border-right-style: solid;
+  border-bottom-color: #f0f0f0;
+  border-bottom-width: thin;
+  border-bottom-style: solid; // stylelint-disable-line declaration-block-no-redundant-longhand-properties
+  border-left-width: thick;
+  border-left-style: unset;
+  cursor: pointer;
+}
+
+.wishlist-menu__link-wishlist {
+  margin: 0;
+  padding: 20px 0;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 22px;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0.25rem;
+  border-right-color: #f08769;
+  border-right-style: solid;
+  border-bottom-color: #f0f0f0;
+  border-bottom-width: thin;
+  border-bottom-style: solid; // stylelint-disable-line declaration-block-no-redundant-longhand-properties
+  border-left-width: thick;
+  border-left-style: unset;
+  cursor: pointer;
+}

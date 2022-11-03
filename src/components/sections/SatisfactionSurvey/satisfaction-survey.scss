@@ -1,0 +1,148 @@
+@import url("../../../styles/fonts.scss");
+
+.satisfaction-survey-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.satisfaction-survey-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+
+  h1, span {
+    font-family: "Cormorant Garamond ", sans-serif;
+  }
+
+  h1 {
+    color: #f08769;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  span {
+    min-width: 13ch;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .recommend-score {
+    display: flex;
+    flex-direction: row;
+    gap: 4.1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 440px) {
+      gap: 8rem;
+    }
+
+    @media (min-width: 768px) {
+      gap: 20rem;
+    }
+
+    :first-child {
+      text-align: left;
+    }
+
+    :last-child {
+      text-align: right;
+    }
+
+    span {
+      display: block;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .button-score {
+    display: flex;
+    margin-top: -2rem;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 29.2px;
+      height: 55px;
+      padding: 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      font-family: "Cormorant Garamond ", sans-serif;
+      text-align: center;
+      border: 1px solid #999;
+      cursor: pointer;
+
+      @media (min-width: 440px) {
+        width: 36px;
+      }
+
+      @media (min-width: 600px) {
+        width: 40px;
+      }
+
+      @media (min-width: 768px) {
+        width: 55px;
+        font-size: 1.4rem;
+      }
+
+      &.red {
+        background-color: #cf2830;
+      }
+
+      &.yellow {
+        background-color: #e5b429;
+      }
+
+      &.green {
+        background-color: #33c443;
+      }
+    }
+  }
+
+  .button-score .selected {
+    border: 2px solid #141414;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    height: 80px;
+    margin-top: -1.5rem;
+  }
+
+  .button-send {
+    width: 158px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: -10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #f08769;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+    opacity: 1;
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+}

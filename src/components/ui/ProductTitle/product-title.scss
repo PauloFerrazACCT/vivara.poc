@@ -1,0 +1,18 @@
+@import "src/styles/scaffold";
+
+.product-title__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  column-gap: var(--space-2);
+  [data-store-badge] { white-space: nowrap; }
+
+  @include media(">=tablet", "<notebook") {
+    flex-direction: column;
+    row-gap: var(--space-3);
+  }
+}
+
+.product-title__header + .product-title__addendum { margin-top: var(--space-3); }
+
+.product-title__addendum { color: var(--color-text-subtle); }

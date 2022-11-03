@@ -1,0 +1,24 @@
+{
+  "title": "Medidas das falanges",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "title": "ID do Usuário",
+      "type": "string"
+    },
+    "measures": {
+      "title": "Medidas",
+      "type": "string"
+    }
+  },
+  "required": ["userId", "measures"],
+  "v-indexed": ["userId", "measures"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": false,
+    "publicRead": ["userId", "measures"],
+    "publicWrite": ["userId", "measures"],
+    "publicFilter": ["userId", "measures"]
+  },
+  "v-cache": false
+}

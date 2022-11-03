@@ -1,0 +1,138 @@
+.newsletter-container {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "subtitle subtitle"
+    "input input"
+    ". button";
+  grid-template-columns: 250px;
+  justify-content: start;
+  margin-left: 1.75rem;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  column-gap: 8px;
+
+  .newsletter-title {
+    grid-area: title;
+    width: 500px;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  .newsletter-subtitle {
+    grid-area: subtitle;
+    width: 500px;
+    margin-bottom: 1rem;
+    padding: 0;
+    color: #737373;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  .newsletter-inputContainer {
+    grid-area: input;
+    border-bottom: solid 1px #272727;
+
+    .newsletter-emailInput {
+      width: 100%;
+      padding: 14px 0 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+      background: #fff;
+      border: none;
+      border-radius: 0;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .confirmation-message {
+    .confirmation-ok {
+      max-width: 199px;
+      height: 16px;
+      color: #12794c;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      line-height: 16.88px;
+    }
+
+    .confirmation-error {
+      max-width: 199px;
+      height: 16px;
+      color: #bf1c1d;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      line-height: 16.88px;
+    }
+  }
+
+  .newsletter-buttonContainer {
+    grid-area: button;
+
+    .newsletter-registerButton {
+      width: 100%;
+      margin-top: 16px;
+      padding: 18px;
+      color: #000;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      background: #ffa687;
+      border: none;
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter-container {
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "input";
+    grid-template-columns: 90%;
+    justify-content: center;
+    margin-left: 0;
+
+    .newsletter-title {
+      max-width: 100%;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .newsletter-subtitle {
+      width: 100%;
+      line-height: 22px;
+      white-space: normal;
+      text-align: center;
+    }
+
+    .newsletter-buttonContainer {
+      grid-area: input;
+      justify-self: end;
+      width: 30%;
+
+      .newsletter-registerButton {
+        margin-top: 0;
+        padding: 13px;
+      }
+    }
+  }
+}

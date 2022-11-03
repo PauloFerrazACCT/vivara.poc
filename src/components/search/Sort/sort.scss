@@ -1,0 +1,73 @@
+@import "src/styles/scaffold";
+
+.desktop-sort {
+  display: none;
+
+  @include media(">=notebook") {
+    display: inline;
+  }
+}
+
+.mobile-sort {
+  @include media(">=notebook") {
+    display: none;
+  }
+}
+
+.sort-modal {
+  &__content {
+    width: 100%;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    .title-display {
+      font-weight: 600;
+      font-size: 24px;
+      font-family: var(--serif);
+    }
+
+    .sort-modal__button {
+      margin-right: calc(-1 * var(--space-1));
+
+      span {
+        width: 20px;
+      }
+    }
+  }
+
+  &__body {
+    --sort-footer-height: 80px;
+
+    height: calc(100vh - var(--sort-footer-height));
+    padding: 2rem 2rem calc(var(--sort-footer-height) + var(--space-3));
+    overflow-y: auto;
+  }
+}
+
+.sort-list {
+  display: flex;
+  flex-direction: column;
+
+  .sort-option {
+    width: 100%;
+    padding: var(--space-3);
+    font-size: var(--text-size-1);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  [data-store-selected="true"] {
+    color: #f08769;
+  }
+}

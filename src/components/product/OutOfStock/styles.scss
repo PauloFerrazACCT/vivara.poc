@@ -1,0 +1,69 @@
+.outOfStock__message {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: var(--serif);
+  line-height: 22px;
+}
+
+.outOfStock__label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.outOfStock__inputsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+
+  .outOfStock__inputName {
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    font-size: 14px;
+    border: 1px solid #585858;
+
+    &::placeholder {
+      color: #d2d2d2;
+    }
+
+    &:focus-visible {
+      outline-color: #585858;
+    }
+  }
+
+  .outOfStock__inputEmail {
+    height: 48px;
+    padding: 14px 16px;
+    font-size: 14px;
+    border: 1px solid #585858;
+
+    &::placeholder {
+      color: #d2d2d2;
+    }
+
+    &:focus-visible {
+      outline-color: #585858;
+    }
+  }
+}
+
+.outOfStock__submitButton {
+  width: 100%;
+  height: 48px;
+  color: #000;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #ffa687;
+  border: unset;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.outOfStock__error {
+  margin-top: 5px;
+  color: #bf1c1d;
+  font-size: 12px;
+}

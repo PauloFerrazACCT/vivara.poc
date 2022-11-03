@@ -1,0 +1,117 @@
+@import "src/styles/scaffold";
+
+.cart-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--bg-neutral-lightest);
+
+  &__close {
+    color: #737373;
+
+    @include media(">=notebook") {
+      padding: 20px 20px 0 0;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  .checkout-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.cart-sidebar--empty {
+    background-color: var(--bg-neutral-lightest);
+  }
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2) var(--page-padding-phone) var(--space-2);
+    background-color: var(--bg-neutral-lightest);
+
+    [data-store-icon-button] {
+      margin-right: calc(-1 * var(--space-1));
+      background: none;
+
+      &:hover {
+        background: none;
+        cursor: pointer;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .cart-sidebar__title {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-right: var(--space-2);
+      line-height: 1.35;
+    }
+  }
+
+  > [data-store-list] {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: var(--bg-neutral-lightest);
+    box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
+
+    li {
+      margin: 0 var(--space-3);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  > footer {
+    margin-top: auto;
+    background-color: var(--bg-neutral-lightest);
+
+    [data-store-button] {
+      width: 80%;
+      font-size: var(--text-size-0);
+      text-transform: uppercase;
+      background: #ffa687;
+      outline: none;
+
+      &:hover {
+        background: #fde1d5;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cart-sidebar {
+    max-width: 25%;
+
+    > [data-store-list] {
+      box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        margin: 0 var(--space-6);
+        padding: var(--space-5) 0;
+      }
+    }
+  }
+}

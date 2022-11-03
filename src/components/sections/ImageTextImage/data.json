@@ -1,0 +1,16 @@
+{
+  "block": [
+    {
+      "id": 1,
+      "title": "Noivado",
+      "href": "#",
+      "img1": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab1-img1.png",
+      "img2": "https://lojavivara.vtexassets.com/arquivos/inq-desk-tab1-img2.png",
+      "img1mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab1-img1.png",
+      "img2mob": "https://lojavivara.vtexassets.com/arquivos/inq-mob-tab1-img2.png",
+      "desc": "A beleza pura dos diamantes, símbolo de amor eterno.",
+      "selection": "/joias/aneis/aneis-solitarios",
+      "gifts": "/joias/aneis/aneis-solitarios"
+    }
+  ]
+}

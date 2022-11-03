@@ -1,0 +1,27 @@
+// .cms-departament-components {
+//   margin-top: 80px;
+// }
+
+.page-title {
+  &__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 122px;
+    margin-top: 30px;
+    padding: 20px 0;
+    background: #f4f4f4;
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 400;
+    font-size: 42px;
+    font-family: "EB Garamond", serif;
+    font-style: normal;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}

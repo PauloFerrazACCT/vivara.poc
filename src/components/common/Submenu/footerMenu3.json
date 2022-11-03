@@ -1,0 +1,21 @@
+{
+  "label": "Informações",
+  "items": [
+    {
+      "label": "Política de garantia",
+      "link": "https://www.vivara.com.br/institucional/politica-garantia"
+    },
+    {
+      "label": "Política de consertos",
+      "link": "https://www.vivara.com.br/institucional/politica-conserto"
+    },
+    {
+      "label": "Aviso externo de privacidade",
+      "link": "/institucional/aviso-externo-de-privacidade"
+    },
+    {
+      "label": "Formas de Pagamento",
+      "link": "https://www.vivara.com.br/institucional/formas-pagamento"
+    }
+  ]
+}

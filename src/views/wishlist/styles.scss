@@ -1,0 +1,14 @@
+.wishlist-page__container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+
+.wishlist-page__aside {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    padding: 1.5rem;
+  }
+}

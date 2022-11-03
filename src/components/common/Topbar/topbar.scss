@@ -1,0 +1,133 @@
+.topbar-wrapper-vivara {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #f09c75;
+
+  .topbar-content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0.25rem 1rem;
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: var(--serif);
+    line-height: 1.25rem;
+    text-align: center;
+  }
+
+  [data-store-button] {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    [data-close-icon] {
+      position: absolute;
+      width: 12px;
+    }
+  }
+
+  [data-store-carousel] {
+    [data-carousel-bullets] {
+      display: none;
+    }
+
+    [data-carousel-controls] {
+      display: none;
+    }
+
+    [data-store-link] {
+      height: 20px;
+    }
+
+    [data-topbar-item] {
+      height: 20px;
+      padding: 0 2.5rem;
+      color: #fff;
+      font-size: 0.875rem;
+      font-family: var(--serif);
+      line-height: 1.25rem;
+      text-align: center;
+      text-decoration: inherit;
+    }
+  }
+}
+
+.topbar-wrapper-life {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #fde1d5;
+
+  .topbar-content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0.25rem 1rem;
+    color: #272727;
+    font-size: 0.875rem;
+    font-family: var(--serif);
+    line-height: 1.25rem;
+    text-align: center;
+  }
+
+  [data-store-button] {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    [data-close-icon] {
+      position: absolute;
+      width: 12px;
+
+      path {
+        stroke: #585858;
+      }
+    }
+  }
+
+  [data-store-carousel] {
+    [data-carousel-bullets] {
+      display: none;
+    }
+
+    [data-carousel-controls] {
+      display: none;
+    }
+
+    [data-store-link] {
+      height: 20px;
+    }
+
+    [data-topbar-item] {
+      height: 20px;
+      padding: 0 2.5rem;
+      color: #272727;
+      font-size: 0.875rem;
+      font-family: var(--serif);
+      line-height: 1.25rem;
+      text-align: center;
+      text-decoration: inherit;
+    }
+  }
+}

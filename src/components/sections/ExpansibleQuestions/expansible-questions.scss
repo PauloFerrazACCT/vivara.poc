@@ -1,0 +1,111 @@
+.a-expansible-questions-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40%;
+  margin-top: 30px;
+  padding: 0 140px;
+  background-color: #fff;
+  border: 2px solid #f4f4f4;
+  transition: 0.4s all ease;
+
+  @media (max-width: 768px) {
+    padding: 0 40px;
+  }
+
+  &.openQuestion {
+    height: 100%;
+  }
+
+  .expansible-questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+    overflow: hidden;
+    transition: 0.4s all ease;
+  }
+
+  .expansible-questions-title {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 0;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #000;
+      font-weight: 400;
+      font-size: 20px;
+      font-family: Roboto, sans-serif;
+      line-height: 28.13px;
+      letter-spacing: 10%;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 22.5px;
+      }
+    }
+  }
+
+  .expansible-questions-answer {
+    width: 100%;
+    margin-bottom: 15px;
+
+    p {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      color: #000;
+      font-weight: lighter;
+      font-size: 14px;
+      font-family: Roboto, sans-serif;
+      line-height: 19.69px;
+      text-align: center;
+      transition: 0.4s all ease;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16.88px;
+      }
+    }
+
+    a {
+      color: #f08769;
+      font-weight: lighter;
+      font-family: Roboto, sans-serif;
+    }
+  }
+
+  button.expansible-questions-button {
+    position: absolute;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border: 2px solid #565656;
+    cursor: pointer;
+    transition: 0.4s all ease;
+
+    &.openQuestion div {
+      transform: rotate(90deg);
+    }
+
+    div {
+      transform: rotate(-90deg);
+
+      svg path {
+        stroke: #fff;
+      }
+    }
+  }
+}
